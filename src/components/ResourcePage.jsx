@@ -176,7 +176,7 @@ function ResourcePage() {
               </div>
             ) : (
               <div className="space-y-6">
-                {filteredJournals.map((journal, index) => (
+                {filteredJournals.map((journal) => (
                   <div
                     key={journal.id}
                     className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 lg:p-8 border border-slate-200 hover:border-blue-300"
