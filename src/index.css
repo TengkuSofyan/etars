@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-family: "Roboto", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* overflow-x: hidden; */
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  
+  
+}
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.glitch-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000000;
+}
+
+.glitch {
+  position: relative;
+  /* font-size: 50px; */
+  /* font-weight: bold; */
+  color: #FFFFFF;
+  letter-spacing: 2px;
+  z-index: 1;
+}
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  color: 50px;
+  background-color: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-before 3s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 2px;
+  width: 100%;
+  height: 100%;
+  color: 50px;
+  background-color: transparent;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-after 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-before {
+  0% {
+     clip: rect(61px, 9999px, 52px, 0);
+  }
+  5% {
+     clip: rect(33px, 9999px, 144px, 0);
+  }
+  10% {
+     clip: rect(121px, 9999px, 115px, 0);
+  }
+  15% {
+     clip: rect(144px, 9999px, 162px, 0);
+  }
+  20% {
+     clip: rect(62px, 9999px, 180px, 0);
+  }
+  25% {
+     clip: rect(34px, 9999px, 42px, 0);
+  }
+  30% {
+     clip: rect(147px, 9999px, 179px, 0);
+  }
+  35% {
+     clip: rect(99px, 9999px, 63px, 0);
+  }
+  40% {
+     clip: rect(188px, 9999px, 122px, 0);
+  }
+  45% {
+     clip: rect(154px, 9999px, 14px, 0);
+  }
+  50% {
+     clip: rect(63px, 9999px, 37px, 0);
+  }
+  55% {
+     clip: rect(161px, 9999px, 147px, 0);
+  }
+  60% {
+     clip: rect(109px, 9999px, 175px, 0);
+  }
+  65% {
+     clip: rect(157px, 9999px, 88px, 0);
+  }
+  70% {
+     clip: rect(173px, 9999px, 131px, 0);
+  }
+  75% {
+     clip: rect(62px, 9999px, 70px, 0);
+  }
+  80% {
+     clip: rect(24px, 9999px, 153px, 0);
+  }
+  85% {
+     clip: rect(138px, 9999px, 40px, 0);
+  }
+  90% {
+     clip: rect(79px, 9999px, 136px, 0);
+  }
+  95% {
+     clip: rect(25px, 9999px, 34px, 0);
+  }
+  100% {
+     clip: rect(173px, 9999px, 166px, 0);
+  }
+}
+
+@keyframes noise-after {
+  0% {
+     clip: rect(26px, 9999px, 33px, 0);
+  }
+  5% {
+     clip: rect(140px, 9999px, 198px, 0);
+  }
+  10% {
+     clip: rect(184px, 9999px, 89px, 0);
+  }
+  15% {
+     clip: rect(121px, 9999px, 6px, 0);
+  }
+  20% {
+     clip: rect(181px, 9999px, 99px, 0);
+  }
+  25% {
+     clip: rect(154px, 9999px, 133px, 0);
+  }
+  30% {
+     clip: rect(134px, 9999px, 169px, 0);
+  }
+  35% {
+     clip: rect(26px, 9999px, 187px, 0);
+  }
+  40% {
+     clip: rect(147px, 9999px, 137px, 0);
+  }
+  45% {
+     clip: rect(31px, 9999px, 52px, 0);
+  }
+  50% {
+     clip: rect(191px, 9999px, 109px, 0);
+  }
+  55% {
+     clip: rect(74px, 9999px, 54px, 0);
+  }
+  60% {
+     clip: rect(145px, 9999px, 75px, 0);
+  }
+  65% {
+     clip: rect(153px, 9999px, 198px, 0);
+  }
+  70% {
+     clip: rect(99px, 9999px, 136px, 0);
+  }
+  75% {
+     clip: rect(118px, 9999px, 192px, 0);
+  }
+  80% {
+     clip: rect(1px, 9999px, 83px, 0);
+  }
+  85% {
+     clip: rect(145px, 9999px, 98px, 0);
+  }
+  90% {
+     clip: rect(121px, 9999px, 154px, 0);
+  }
+  95% {
+     clip: rect(156px, 9999px, 44px, 0);
+  }
+  100% {
+     clip: rect(67px, 9999px, 122px, 0);
+  }
+}
+
+/* .card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+} */
+
+/* HTML: <img class="octagon" src="" alt=""> */
+.octagon {
+   width: 200px;
+   aspect-ratio: 1;
+   --o:calc(50%*tan(-22.5deg));
+   clip-path: polygon(
+     var(--o) 50%,
+     50% var(--o),
+     calc(100% - var(--o)) 50%,
+     50% calc(100% - var(--o))
+   );
+   background: #3B8686;
+ }
+
+ .bg-pattern {
+   --s: 100px; /* control the size*/
+   --c1: #FDF200;
+   --c2: #07AEC0;
+     
+   background:
+     conic-gradient(var(--c1) 25%,#0000 0 50%,var(--c2) 0 75%,#0000 0),
+     linear-gradient(135deg,
+       var(--c1) 0 12.5%,var(--c2) 0 25%,
+       var(--c1) 0 37.5%,var(--c2) 0 62.5%,
+       var(--c1) 0 75%  ,var(--c2) 0 87.5%,
+       var(--c1) 0);
+   background-size: var(--s) var(--s);
+ }

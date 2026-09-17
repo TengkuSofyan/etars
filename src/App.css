@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme{
+  --color-primary: #07AEC0;
+  --color-secondary: #FDF200;
+  --color-teal: #2EC4B6;
+  --color-lime: #E6F75D;
+  --color-yellow: #F4F269;
+  --color-dark: #1F2933;
+  --color-text: #4B5563;
+  --color-soft: #F9FAFB;
+}
+
+html {
+  scrollbar-gutter: stable both-edges;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+      to right,
+      #0f766e,
+      #1b9c8f,
+      #2ec4b6
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.blob-mask {
+  /* Penting: mask image (Safari butuh -webkit-) */
+  -webkit-mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><path d="M1854.96 1190.58c-58.28-347.97-7.98-306.49 15.62-629.81 20.82-285.24-103.06-399.75-339.37-436.18-190.88-29.43-452.66 66.41-723.5 77.03-106.18 4.16-702.68-151.99-698.52 224.86 5.45 492.89 80.3 671.58 53.09 874.45-93.69 698.52 302.28 460.25 588.17 519.46 155.77 32.26 583.98 85.01 793.25 47.89 404.95-71.83 370.96-321.28 311.26-677.7Z" fill="%23808"/></svg>');
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000"><path d="M1854.96 1190.58c-58.28-347.97-7.98-306.49 15.62-629.81 20.82-285.24-103.06-399.75-339.37-436.18-190.88-29.43-452.66 66.41-723.5 77.03-106.18 4.16-702.68-151.99-698.52 224.86 5.45 492.89 80.3 671.58 53.09 874.45-93.69 698.52 302.28 460.25 588.17 519.46 155.77 32.26 583.98 85.01 793.25 47.89 404.95-71.83 370.96-321.28 311.26-677.7Z" fill="%23808"/></svg>');
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
