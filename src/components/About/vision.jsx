@@ -1,5 +1,4 @@
 import React from "react";
-import imgVision1 from "/img/hand-toss.jpg";
 import imgVision2 from "/img/two-people.jpg";
 import { ImBullhorn } from "react-icons/im";
 import { FaFlag } from "react-icons/fa";
@@ -10,7 +9,7 @@ import FadeIn from "../motion/FadeIn";
 function vision() {
   return (
     <>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 max-w-[1024px] px-4 md:px-6">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-[1024px] px-4 md:px-6">
         <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl order-1">
           <ImBullhorn className="w-12 h-12 " />
           <h2 className="font-bold text-[28px]">Our Mission </h2>

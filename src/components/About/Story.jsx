@@ -1,5 +1,4 @@
 import React from "react";
-import stickNoteImg from "/img/stick-note.jpg";
 import SlideInLeft from "@/components/motion/SlideInLeft";
 import SlideInRight from "@/components/motion/SlideInRight";
 import FadeIn from "../motion/FadeIn";
@@ -7,8 +6,8 @@ import FadeIn from "../motion/FadeIn";
 function Story() {
   return (
     <>
-      <section className="relative pb-16 w-full pt-16">
-        <div className="max-w-[1024px] px-4 sm:px-6 lg:px-8">
+      <section className="relative pb-16 w-full max-w-[1024px] lg:pt-4 pt-16">
+        <div className=" px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
             <SlideInLeft className="order-2">
