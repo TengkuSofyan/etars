@@ -7,7 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 function Head() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-7 grid-rows-1 gap-4 text-primary px-4 md:px-6 py-4 lg:px-8 md:py-[50px] max-w-[1024px]">
-      <SlideInLeft className="md:col-span-4 order-2 lg:order-1 pt-4 md:pt-0 leading-snug">
+      <SlideInLeft className="md:col-span-4 order-1 pt-4 md:pt-0 leading-snug">
         <h1 className="text-[32px] font-outfit font-extrabold md:text-4xl lg:text-5xl text-dark leading-snug md:leading-tight">
           Bridging Energy Knowledge <span className="text-teal">&amp; Real-World</span> Practice
         </h1>
@@ -22,7 +22,7 @@ function Head() {
           </span>
         </button>
       </SlideInLeft>
-      <SlideInRight className="w-full h-full relative rounded-xl overflow-hidden md:col-span-3 md:col-start-5 mt-4 md:mt-0 hidden md:block order-2">
+      <SlideInRight className="w-full h-full relative rounded-xl overflow-hidden md:col-span-3 md:col-start-5 mt-4 md:mt-0 order-2">
         <img className="w-full h-full " src={bannerImg} />
         {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" /> */}
       </SlideInRight>

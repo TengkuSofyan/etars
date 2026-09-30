@@ -7,11 +7,11 @@ import FadeIn from "../motion/FadeIn";
 function Story() {
   return (
     <>
-      <section className="relative pb-16 ">
-        <div className="mx-auto max-w-[1024px] px-4 sm:px-6 lg:px-8">
+      <section className="relative pb-16 w-full pt-16">
+        <div className="max-w-[1024px] px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
-            <SlideInLeft>
+            <SlideInLeft className="order-2">
               <div className="relative">
                 {/* Glow */}
                 <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-[#0F766E]/25 via-[#1B9C8F]/15 to-[#2EC4B6]/20 blur-2xl" />
@@ -31,14 +31,14 @@ function Story() {
             </SlideInLeft>
 
             {/* Right: Text */}
-            <SlideInRight>
+            <SlideInRight className="order-1">
               <div>
                 <p className="text-sm font-semibold tracking-wider text-[#0F766E]">
                   ABOUT
                 </p>
 
-                <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-                  Our Story
+                <h2 className="mt-2 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl font-outfit">
+                  Our <span className="text-teal">Story</span>
                 </h2>
 
                 <p className="mt-4 max-w-prose leading-relaxed text-slate-600">

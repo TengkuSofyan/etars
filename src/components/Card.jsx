@@ -9,7 +9,7 @@ function Card({ name, job, image, email, linkedin, github, extra_class }) {
   return (
     <FadeIn className="profile bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Card Header with Background */}
-      <div className=" h-24 bg-gradient-to-tr from-primary to-secondary"></div>
+      <div className=" h-24 bg-gradient-to-tr from-teal to-primary"></div>
 
       {/* Profile Section */}
       <div className="relative px-6 pb-6">
