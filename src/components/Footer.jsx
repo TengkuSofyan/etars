@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "/img/logo.png";
 
 const navLinks = [
   { name: "About", href: "/" },
@@ -13,39 +14,13 @@ export default function Footer() {
 
   return (
     <footer className="bg-white shadow-[0_-8px_30px_rgba(0,0,0,0.06)]">
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1024px] px-4 py-12 sm:px-6 lg:px-8">
         {/* Top */}
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
             <Link to="/" className="inline-flex items-center gap-3">
-              {/* Sample Logo */}
-              <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 ring-1 ring-gray-200">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="h-6 w-6 text-gray-900"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path
-                    d="M12 2.5l8.5 4.9v9.2L12 21.5 3.5 16.6V7.4L12 2.5z"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                  />
-                  <path
-                    d="M7.5 12.2l3 3.1 6-6.2"
-                    stroke="currentColor"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-
-              <span className="text-base font-semibold tracking-wide text-gray-900">
-                YourCompany
-              </span>
+              <img src={logo} style={{ width: "100px", height: "50px" }} />
             </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-gray-600">

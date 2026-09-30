@@ -21,17 +21,9 @@ function WeDoPage() {
               <span className="border-b-3 border-white">Overview</span>
             </h2>
             <p className="text-lg lg:text-2xl font-medium">
-              We support energy companies through consulting services mainly in
-              reservoir engineering & simulation, Production forecasting &
-              optimization, petrophysical analysis, and ML implementation in the
-              oil and gas industry.
+              We develop and share practical learning resources through e-courses, seminars, technical discussions, and educational videos. We are also open to collaborating with industry professionals, organizations, and academic communities to exchange expertise, explore innovative ideas, and work together on technical challenges across the energy and oil and gas sectors.
             </p>
-            <p className="mt-2 text-lg lg:text-2xl font-medium">
-              At the same time, we are committed to education-creating online
-              classes, study cases, and accessible content to help students and
-              professionals strngthen their knowledge in energy, oil & gas, and
-              data-driven solutions.
-            </p>
+
             <button className="text-black bg-white mt-4 rounded-md p-2 font-medium flex flex-row items-center justify-center lg:text-xl">
               Our Project
               <IoIosArrowDropdownCircle size={20} className="ml-2" />

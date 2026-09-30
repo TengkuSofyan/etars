@@ -1,21 +1,26 @@
+import user1 from "/img/user1.jpeg"
+import user2 from "/img/userA.jpeg"
+
 const teamMembers = [
   {
-    name: "Sarah Johnson",
-    job: "Senior Frontend Developer",
+    name: "Tengku Sofyan",
+    job: "Ph.D Candidate in Petroleum Engineering Department at KFUPM",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      user2,
     email: "sarah.j@example.com",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
+    class: "object-cover",
   },
   {
-    name: "Michael Chen",
-    job: "UX/UI Designer",
+    name: "Muhammad Aufa",
+    job: "Reservoir Engineer at EMP",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      user1,
     email: "michael.c@example.com",
     linkedin: "https://linkedin.com",
     github: "https://github.com",
+    class: "row-start-2",
   },
 ];
 

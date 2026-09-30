@@ -6,7 +6,7 @@ export default function FadeIn({
   className = "",
   duration = 1,
   delay = 0.25,
-  once = false,
+  once = true,
   amount = 0.2,
   ...rest
 }) {

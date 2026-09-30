@@ -7,34 +7,8 @@ import FadeIn from "../motion/FadeIn";
 function Story() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 px-4 md:px-6 lg:px-8 py-12 bg-soft max-w-[1280px] xl:rounded-xl">
-        <FadeIn className="relative rounded-xl overflow-hidden">
-          <img src={stickNoteImg} className="w-full h-full " />
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" />
-        </FadeIn>
-        <SlideInRight className="text-dark">
-          <h2 className="text-[28px] md:text-[34px] lg:text-[40px] gradient-text font-bold pb-0 ">
-            Our Story
-          </h2>
-          <p className=" md:pb-2 text-justify">
-            As am hastily invited settled at limited civilly fortune me. Really
-            spring in extent an by. Judge but built gay party world. Of so am he
-            remember although required. Bachelor unpacked be advanced at.
-            Confined in declared marianne is vicinity.
-          </p>
-          <p className="md:pb-2 text-justify">
-            Conveying or northward offending admitting perfectly my. Colonel
-            gravity get thought fat smiling add but. Wonder twenty hunted and
-            put income set desire expect. Am cottage calling my is mistake
-            cousins talking up. Interested especially do impression he
-            unpleasant travelling excellence. All few our knew time done draw
-            ask.
-          </p>
-        </SlideInRight>
-      </div>
-
-      <section className="relative py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative pb-16 ">
+        <div className="mx-auto max-w-[1024px] px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
             <SlideInLeft>

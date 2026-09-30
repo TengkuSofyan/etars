@@ -15,12 +15,12 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white text-primary shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-3xl font-bold">
-              <img src={logo} style={{ width: "60px", height: "50px" }} />
+              <img src={logo} style={{ width: "100px", height: "50px" }} />
               {/* Logo */}
             </Link>
           </div>
