@@ -9,7 +9,7 @@ import FadeIn from "../motion/FadeIn";
 function vision() {
   return (
     <>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-[1024px] px-4 md:px-6">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 md:px-6">
         <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl order-1">
           <ImBullhorn className="w-12 h-12 " />
           <h2 className="font-bold text-[28px]">Our Mission </h2>
@@ -27,7 +27,7 @@ function vision() {
             src={imgVision2}
             className=" w-full h-full object-cover object-[center_10%] "
           />
-          {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" /> */}
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-dark/50" />
         </FadeIn>
         <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-dark flex items-center justify-center flex-col rounded-2xl order-3">
           <FaFlag className="w-12 h-12" />

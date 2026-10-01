@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white text-primary shadow-lg">
-      <div className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -32,7 +32,7 @@ export default function Navbar() {
                 <Link
                   key={link.name}
                   to={link.href}
-                  className="px-3 text-primary py-2 rounded-md text-md font-medium hover:bg-primary hover:text-slate-50 transition duration-300"
+                  className="px-3 text-primary py-2 rounded-md text-md font-bold font-outfit hover:bg-primary hover:text-slate-50 transition duration-300"
                 >
                   {link.name}
                 </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 to={link.href}
-                className="block text-primary px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 transition duration-300"
+                className="block font-outfit text-primary px-3 py-2 rounded-md text-base font-medium hover:bg-slate-700 transition duration-300"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
