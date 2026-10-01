@@ -10,7 +10,7 @@ function Story() {
         <div className=" px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
-            <SlideInLeft className="order-2">
+            <SlideInLeft className="order-2 lg:order-1">
               <div className="relative">
                 {/* Glow */}
                 <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-[#0F766E]/25 via-[#1B9C8F]/15 to-[#2EC4B6]/20 blur-2xl" />
@@ -30,7 +30,7 @@ function Story() {
             </SlideInLeft>
 
             {/* Right: Text */}
-            <SlideInRight className="order-1">
+            <SlideInRight className="order-1 lg:order-2">
               <div>
                 <p className="text-sm font-semibold tracking-wider text-[#0F766E]">
                   ABOUT
