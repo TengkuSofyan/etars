@@ -1,10 +1,5 @@
 import { React } from 'react';
 
-// Import CSS bawaan Swiper
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
 function Expertise() {
 
     return (
