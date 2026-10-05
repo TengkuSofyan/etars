@@ -7,8 +7,8 @@ import imgStory from "/img/story.jpg"
 function Story() {
   return (
     <>
-      <section className="relative pb-16 w-full max-w-7xl lg:pt-4 pt-16">
-        <div className=" px-4 sm:px-6 lg:px-8">
+      <section className="relative w-full max-w-7xl">
+        <div className=" px-4 sm:px-6 lg:px-8 xl:py-18">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
             <SlideInLeft className="order-2 lg:order-1">
@@ -41,7 +41,7 @@ function Story() {
                   Our <span className="text-teal">Story</span>
                 </h2>
 
-                <p className="mt-4 max-w-prose leading-relaxed text-slate-600">
+                <p className="mt-6 max-w-prose leading-relaxed text-slate-600">
                   As an independent consulting and education group in the energy
                   and oil &amp; gas sector, we combine technical expertise with
                   data science and machine learning to deliver practical and

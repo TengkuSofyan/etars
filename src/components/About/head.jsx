@@ -6,7 +6,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Head() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-7 grid-rows-1 gap-4 text-primary px-4 md:px-6 py-4 lg:px-8 md:py-[50px] max-w-7xl">
+    <div className="grid grid-cols-1 md:grid-cols-7 grid-rows-1 gap-4 text-primary px-4 md:px-6 pt-8 md:pt-16 lg:pt-20 lg:px-8 xl:pb-18 max-w-7xl">
       <SlideInLeft className="md:col-span-4 xl:col-span-3 order-1 pt-4 md:pt-0 leading-snug">
         <h1 className="text-[32px] font-outfit font-extrabold md:text-4xl lg:text-5xl text-dark leading-snug md:leading-tight">
           Bridging Energy Knowledge <span className="text-teal">&amp; Real-World</span> Practice

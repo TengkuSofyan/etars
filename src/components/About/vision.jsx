@@ -10,7 +10,7 @@ import FadeIn from "../motion/FadeIn";
 function vision() {
   return (
     <>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 md:px-6 pb-16">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 xl:px-18 md:px-6 lg:py-14 xl:py-18 bg-gray-100">
         <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl">
           <ImBullhorn className="w-12 h-12 " />
           <h2 className="font-bold text-soft text-[28px]">Our Mission </h2>
@@ -31,15 +31,17 @@ function vision() {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-dark/60" />
         </FadeIn> */}
 
-        <div className="row-span-2 bg-dark rounded-2xl overflow-hidden relative">
+
+        <SlideInLeft className="row-span-2 bg-dark rounded-2xl overflow-hidden relative">
           <img className="bg-cover h-full w-full" src={imgVision} />
-          <div className="absolute inset-0 bg-gradient-to-tr from-teal/50 to-teal/50" />
-        </div>
-        <div className="bg-cover row-span-2 bg-dark rounded-2xl overflow-hidden relative">
+          <div className="absolute inset-0 bg-gradient-to-tr from-teal/40 to-teal/40" />
+        </SlideInLeft>
+        <SlideInRight className="bg-cover row-span-2 bg-dark rounded-2xl overflow-hidden relative">
           <img className="bg-cover h-full w-full" src={imgMission} />
           <div className="absolute inset-0 bg-gradient-to-tr from-dark/50 to-dark/50" />
-        </div>
+        </SlideInRight>
         {/* end middle section */}
+
         <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center flex-col rounded-2xl order-3">
           <FaFlag className="w-12 h-12" />
           <h2 className="font-bold text-[28px] ">Our Vision </h2>
