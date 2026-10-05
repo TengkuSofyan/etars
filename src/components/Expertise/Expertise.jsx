@@ -1,7 +1,4 @@
-import { useRef, useState, useEffect, React } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination, FreeMode } from 'swiper/modules';
-import reservoirImg from "/img/reservoir.png"
+import { React } from 'react';
 
 // Import CSS bawaan Swiper
 import 'swiper/css';
