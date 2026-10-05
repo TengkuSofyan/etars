@@ -2,6 +2,7 @@ import React from "react";
 import SlideInLeft from "@/components/motion/SlideInLeft";
 import SlideInRight from "@/components/motion/SlideInRight";
 import FadeIn from "../motion/FadeIn";
+import imgStory from "/img/story.jpg"
 
 function Story() {
   return (
@@ -16,9 +17,9 @@ function Story() {
                 <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-[#0F766E]/25 via-[#1B9C8F]/15 to-[#2EC4B6]/20 blur-2xl" />
 
                 {/* Blob */}
-                <div className="relative blob-mask overflow-hidden shadow-lg ring-1 ring-black/5">
+                <div className="relative overflow-hidden shadow-lg ring-1 ring-black/5 rounded-tl-4xl rounded-br-4xl">
                   <img
-                    src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1600&auto=format&fit=crop"
+                    src={imgStory}
                     alt="Our story"
                     className="h-[340px] w-full object-cover sm:h-[420px] lg:h-[480px]"
                   />

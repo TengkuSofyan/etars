@@ -1,5 +1,6 @@
 import user1 from "/img/user1.jpeg"
 import user2 from "/img/userA.jpeg"
+import user3 from "/img/user3.jpg"
 
 const teamMembers = [
   {
@@ -8,17 +9,27 @@ const teamMembers = [
     image:
       user2,
     email: "sarah.j@example.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/t-mhd-sofyan/ ",
     github: "https://github.com",
     class: "object-cover",
   },
   {
-    name: "Muhammad Aufa",
+    name: "Muhammad Habiburrahman",
     job: "Reservoir Engineer at EMP",
     image:
       user1,
     email: "michael.c@example.com",
-    linkedin: "https://linkedin.com",
+    linkedin: "https://www.linkedin.com/in/aufahabib/",
+    github: "https://github.com",
+    class: "row-start-2",
+  },
+  {
+    name: "Fajar Ariesta",
+    job: "15+ years experience as Reservoir Engineer at Medco E&P Indonesia",
+    image:
+      user3,
+    email: "michael.c@example.com",
+    linkedin: "https://www.linkedin.com/in/fajar-ariessita-130a98321/ ",
     github: "https://github.com",
     class: "row-start-2",
   },
@@ -94,96 +105,26 @@ const journals = [
 ];
 
 const task = [
+
   {
     id: 1,
-    imageUrl: "https://images.unsplash.com/photo-1526378722484-cc5c5102fd0c",
-    title: "AI-Based Document Classification",
+    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    title: "Production Forecasting and Reserve Evaluation of the Nini Field Using Arps Decline Curve Analysis",
     short_description:
-      "A system that automatically classifies documents using machine learning models for enterprise workflows.",
-    category: ["Artificial Intelligence", "Enterprise"],
-    stack: ["python", "tensorflow", "scikit-learn"],
+      "In this study, Arps decline curve analysis (DCA) is used to separate and forecast the oil production of Nini West and Nini East in the Danish North Sea",
+    category: ["Machine Learning", "Data Science"],
+    tags: ["ARP", "DCA"],
   },
   {
     id: 2,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    title: "Smart Recommendation Engine",
-    short_description:
-      "Personalized recommendation engine based on user behavior and historical data.",
-    category: ["Machine Learning", "Data Science"],
-    stack: ["python", "pandas", "numpy"],
-  },
-  {
-    id: 3,
     imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    title: "Company Profile Website",
+    title: "Uncertainty Quantification in Reservoir Simulation with Monte Carlo Simulation",
     short_description:
-      "Responsive and modern company profile website with clean UI and smooth animations.",
+      "In this study, Monte Carlo simulation is used to quantify the uncertainty in cumulative oil production of the PUNQ-S3 reservoir model, an open-source benchmark built from a real Elf field with a gas cap and an active aquifer.",
     category: ["Web Development", "Corporate"],
-    stack: ["javascript", "react", "tailwind"],
+    tags: ["Monte Carlo", "Reservoir Simulation"],
   },
-  {
-    id: 4,
-    imageUrl: "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
-    title: "Real-Time Data Dashboard",
-    short_description:
-      "Interactive dashboard for monitoring real-time metrics and KPIs.",
-    category: ["Data Visualization", "Web App"],
-    stack: ["javascript", "react", "chartjs"],
-  },
-  {
-    id: 5,
-    imageUrl: "https://images.unsplash.com/photo-1531482615713-2afd69097998",
-    title: "Chatbot Customer Support",
-    short_description:
-      "AI-powered chatbot to automate customer support interactions.",
-    category: ["Artificial Intelligence", "Customer Service"],
-    stack: ["python", "nlp", "transformers"],
-  },
-  {
-    id: 6,
-    imageUrl: "https://images.unsplash.com/photo-1522252234503-e356532cafd5",
-    title: "E-Commerce Platform",
-    short_description:
-      "Full-featured e-commerce platform with product management and payment integration.",
-    category: ["E-Commerce", "Web Development"],
-    stack: ["javascript", "nodejs", "mongodb"],
-  },
-  {
-    id: 7,
-    imageUrl: "https://images.unsplash.com/photo-1527430253228-e93688616381",
-    title: "Mobile Fitness Application",
-    short_description:
-      "Mobile application for tracking workouts, nutrition, and personal fitness goals.",
-    category: ["Mobile App", "Health Tech"],
-    stack: ["javascript", "react-native", "firebase"],
-  },
-  {
-    id: 8,
-    imageUrl: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-    title: "Predictive Maintenance System",
-    short_description:
-      "Predictive analytics system to reduce equipment downtime in industrial environments.",
-    category: ["Industrial", "Data Analytics"],
-    stack: ["python", "xgboost", "pandas"],
-  },
-  {
-    id: 9,
-    imageUrl: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-    title: "Cloud-Based API Service",
-    short_description:
-      "Scalable REST API service hosted on cloud infrastructure.",
-    category: ["Cloud Computing", "Backend"],
-    stack: ["nodejs", "express", "docker"],
-  },
-  {
-    id: 10,
-    imageUrl: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
-    title: "Data Processing Pipeline",
-    short_description:
-      "Automated data ingestion and processing pipeline for large-scale datasets.",
-    category: ["Data Engineering", "Big Data"],
-    stack: ["python", "apache-spark", "airflow"],
-  },
+
 ];
 
 export default { teamMembers, journals, task };

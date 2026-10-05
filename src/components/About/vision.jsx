@@ -1,5 +1,5 @@
 import React from "react";
-import imgVision2 from "/img/two-people.jpg";
+import imgVision2 from "/img/two-people-art.jpg";
 import { ImBullhorn } from "react-icons/im";
 import { FaFlag } from "react-icons/fa";
 import SlideInLeft from "@/components/motion/SlideInLeft";
@@ -9,35 +9,37 @@ import FadeIn from "../motion/FadeIn";
 function vision() {
   return (
     <>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 md:px-6">
-        <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl order-1">
+      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 md:px-6 pb-16">
+        <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl">
           <ImBullhorn className="w-12 h-12 " />
-          <h2 className="font-bold text-[28px]">Our Mission </h2>
+          <h2 className="font-bold text-soft text-[28px]">Our Mission </h2>
         </SlideInLeft>
         <SlideInLeft className="row-start-2 md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-3 bg-primary flex items-center justify-center rounded-2xl order-2 p-4">
-          <p className="text-md font-medium text-justify md:p-4">
-            To bridge the gap between industry and education: solving real
-            challenges for energy companies while empowering the next generation
-            of engineers, scientists, and decision-makers through practical and
-            high quality learning.
+          <p className="text-md text-soft font-medium text-justify md:p-4">
+            To bridge the gap between academia and the energy industry by turning theoretical knowledge into practical solutions. We are dedicated to supporting students through high-quality learning resources and partnering with industry to solve real-world challenges
           </p>
         </SlideInLeft>
-        <FadeIn className="col-span-2 row-span-2  col-start-2 row-start-1 relative overflow-hidden rounded-2xl hidden md:block md:max-h-[208px] lg:max-h-[210px]">
+
+        {/* middle section */}
+
+        {/* <FadeIn className="col-span-2 row-span-2  col-start-2 row-start-1 relative overflow-hidden rounded-2xl hidden md:block md:max-h-[208px] lg:max-h-[210px]">
           <img
             src={imgVision2}
             className=" w-full h-full object-cover object-[center_10%] "
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-dark/50" />
-        </FadeIn>
-        <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-dark flex items-center justify-center flex-col rounded-2xl order-3">
+          <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-dark/60" />
+        </FadeIn> */}
+
+        <div className="row-span-2 bg-dark rounded-2xl">2</div>
+        <div className="row-span-2 bg-dark rounded-2xl">3</div>
+        {/* end middle section */}
+        <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center flex-col rounded-2xl order-3">
           <FaFlag className="w-12 h-12" />
           <h2 className="font-bold text-[28px] ">Our Vision </h2>
         </SlideInRight>
-        <SlideInRight className="row-start-4 md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 bg-dark flex items-center justify-center rounded-2xl order-4 p-4">
+        <SlideInRight className="row-start-4 md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center rounded-2xl order-4 p-4">
           <p className="text-md text-soft font-medium text-justify md:p-4">
-            To be recognised as a trusted partner for energy consulting and a
-            leading hub for knowledge sharing, innovation, and education in the
-            global energy landscape.
+            To be a leading, accessible hub for energy education where academic knowledge and industry practice seamlessly connect to advance the global energy sector
           </p>
         </SlideInRight>
 

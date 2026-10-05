@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
-@theme{
+@theme {
   --color-primary: #07AEC0;
   --color-secondary: #FDF200;
   --color-teal: #2EC4B6;
   --color-lime: #E6F75D;
   --color-yellow: #F4F269;
-  --color-dark: #1F2933;
+  --color-dark: #263143;
+  --color-dark-soft: #233545;
   --color-text: #4B5563;
-  --color-soft: #F9FAFB;
+  --color-soft: #ecf1ff;
 }
 
 html {
@@ -22,15 +23,13 @@ html {
 }
 
 .gradient-text {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       #0f766e,
       #1b9c8f,
-      #2ec4b6
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+      #2ec4b6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 #root {
@@ -46,9 +45,11 @@ html {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -57,6 +58,7 @@ html {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

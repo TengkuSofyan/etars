@@ -10,11 +10,12 @@ function AboutPage() {
     <div className="flex justify-center flex-col items-center">
       <Head />
 
+      {/* Vision Mission */}
+      <Vision />
+
       {/* Story */}
       <Story />
 
-      {/* Vision Mission */}
-      <Vision />
 
       {/* Team */}
       <Team />

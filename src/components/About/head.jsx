@@ -12,7 +12,7 @@ function Head() {
           Bridging Energy Knowledge <span className="text-teal">&amp; Real-World</span> Practice
         </h1>
         <p className="lg:pt-2 text-md lg:text-lg text-dark  font-normal mt-2 lg:mt-1 text-justify md:pr-6">
-          We are a nonprofit organization bringing together expertise in energy, petroleum engineering, and education. We are committed to strengthening connections among students, researchers, professionals, and industry partners to support the development of knowledge and innovation in the energy sector.
+          We are a nonprofit organization dedicated to advancing knowledge and innovation within the energy and oil & gas sectors. We believe that massive progress happens when fundamental academic theories meet real-world industry applications. Our goal is to bridge this gap—demonstrating how core engineering concepts can be applied to solve practical field problems, and ultimately contributing to the continuous development of energy sciences.
         </p>
 
         <button className="bg-teal border-2 border-soft rounded-full text-soft mt-4 p-4 font-medium flex items-center justify-between">

@@ -11,7 +11,7 @@ function Team() {
                 <h2 className="text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark text-center font-outfit">
                     Meet Our <span className='text-teal'>Expert</span>
                 </h2>
-                <div className="py-6 grid-cols-1 grid-rows-2 grid md:grid-cols-2 md:grid-rows-1 gap-4 lg:gap-8">
+                <div className="py-6 grid-cols-1 grid-rows-2 grid md:grid-cols-3 md:grid-rows-1 gap-4 lg:gap-8">
                     {teamMembers.map((member, index) => (
                         <Card
                             key={index}

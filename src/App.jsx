@@ -16,6 +16,10 @@ import WeDoPage from "./components/WeDoPage";
 import ResourcePage from "./components/ResourcePage";
 import ContactPage from "./components/ContactPage";
 import Footer from "./components/Footer";
+import BlogPage from "./components/BlogPage";
+import Blog2Page from "./components/Blog2Page";
+import Blog3Page from "./components/Blog3Page";
+import ScrollToTop from "./components/ScrollToTop";
 
 gsap.registerPlugin(_ScrollTrigger);
 function App() {
@@ -27,7 +31,10 @@ function App() {
         <Route path="/we-do" element={<WeDoPage />} />
         <Route path="/resource" element={<ResourcePage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/we-do/1" element={<BlogPage />} />
+        <Route path="/we-do/2" element={<Blog3Page />} />
       </Routes>
+      <ScrollToTop />
       <Footer />
     </div>
   );
