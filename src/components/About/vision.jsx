@@ -1,5 +1,6 @@
 import React from "react";
-import imgVision2 from "/img/two-people-art.jpg";
+import imgVision from "/img/vision.jpg";
+import imgMission from "/img/mission.jpg";
 import { ImBullhorn } from "react-icons/im";
 import { FaFlag } from "react-icons/fa";
 import SlideInLeft from "@/components/motion/SlideInLeft";
@@ -30,8 +31,14 @@ function vision() {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-dark/60" />
         </FadeIn> */}
 
-        <div className="row-span-2 bg-dark rounded-2xl">2</div>
-        <div className="row-span-2 bg-dark rounded-2xl">3</div>
+        <div className="row-span-2 bg-dark rounded-2xl overflow-hidden relative">
+          <img className="bg-cover h-full w-full" src={imgVision} />
+          <div className="absolute inset-0 bg-gradient-to-tr from-teal/50 to-teal/50" />
+        </div>
+        <div className="bg-cover row-span-2 bg-dark rounded-2xl overflow-hidden relative">
+          <img className="bg-cover h-full w-full" src={imgMission} />
+          <div className="absolute inset-0 bg-gradient-to-tr from-dark/50 to-dark/50" />
+        </div>
         {/* end middle section */}
         <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center flex-col rounded-2xl order-3">
           <FaFlag className="w-12 h-12" />
