@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import sampleImg from "/img/learn-python.png";
+
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
 import {
@@ -17,7 +17,7 @@ function ResourcePage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedYear, setSelectedYear] = useState("all");
 
-  const { journals } = data;
+  const journals = data.paper;
   const years = ["all", ...new Set(journals.map((j) => j.year))].sort(
     (a, b) => {
       if (a === "all") return -1;
@@ -25,13 +25,23 @@ function ResourcePage() {
       return b - a;
     }
   );
+
+  // const filteredJournals = journals.filter((journal) => {
+  //   const matchesSearch =
+  //     journal.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  //     journal.authors.some((author) =>
+  //       author.toLowerCase().includes(searchTerm.toLowerCase())
+  //     ) ||
+  //     journal.journal.toLowerCase().includes(searchTerm.toLowerCase());
+  //   const matchesYear =
+  //     selectedYear === "all" || journal.year === parseInt(selectedYear);
+  //   return matchesSearch && matchesYear;
+  // });
+
   const filteredJournals = journals.filter((journal) => {
     const matchesSearch =
       journal.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      journal.authors.some((author) =>
-        author.toLowerCase().includes(searchTerm.toLowerCase())
-      ) ||
-      journal.journal.toLowerCase().includes(searchTerm.toLowerCase());
+      journal.publisher.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesYear =
       selectedYear === "all" || journal.year === parseInt(selectedYear);
     return matchesSearch && matchesYear;
@@ -39,81 +49,13 @@ function ResourcePage() {
 
   return (
     <div className="px-4 md:px-6 lg:px-8 text-primary max-w-[1280px] mx-auto">
-      <h1 className="text-6xl font-medium gradient-text mt-12">Resource</h1>
-      <div className="mt-8 text-center">
-        <h2 className="gradient-text text-4xl font-medium ">Our Videos</h2>
-        {/* card container */}
-        <div className="flex flex-row flex-wrap items-center justify-center gap-4 text-black p-6">
-          <div className="shadow-xl flex flex-row p-2">
-            <div className="h-32 w-32 ">
-              <img className="h-full w-full" src={sampleImg} />
-            </div>
-            <div className="p-4">
-              <p className="mb-1 font-medium text-left">
-                Learn Python in Less than 10 Minutes
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start mb-1">
-                <FaUserAlt className="mr-1" /> CodeHolic
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start">
-                <IoIosTime size={16} className="mr-1" /> September 2024
-              </p>
-            </div>
-          </div>
-          <div className="shadow-xl flex flex-row p-2">
-            <div className="h-32 w-32 ">
-              <img className="h-full w-full" src={sampleImg} />
-            </div>
-            <div className="p-4">
-              <p className="mb-1 font-medium ">
-                Learn Python in Less than 10 Minutes
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start mb-1">
-                <FaUserAlt className="mr-1" /> CodeHolic
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start">
-                <IoIosTime size={16} className="mr-1" /> September 2024
-              </p>
-            </div>
-          </div>
-          <div className="shadow-xl flex flex-row p-2">
-            <div className="h-32 w-32 ">
-              <img className="h-full w-full" src={sampleImg} />
-            </div>
-            <div className="p-4">
-              <p className="mb-1 font-medium ">
-                Learn Python in Less than 10 Minutes
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start mb-1">
-                <FaUserAlt className="mr-1" /> CodeHolic
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start">
-                <IoIosTime size={16} className="mr-1" /> September 2024
-              </p>
-            </div>
-          </div>
-          <div className="shadow-xl flex flex-row p-2">
-            <div className="h-32 w-32 ">
-              <img className="h-full w-full" src={sampleImg} />
-            </div>
-            <div className="p-4">
-              <p className="mb-1 font-medium ">
-                Learn Python in Less than 10 Minutes
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start mb-1">
-                <FaUserAlt className="mr-1" /> CodeHolic
-              </p>
-              <p className="text-sm flex flex-row items-center justify-start">
-                <IoIosTime size={16} className="mr-1" /> September 2024
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h1 className="text-5xl font-extrabold Font-outfit mt-12">Resource</h1>
+
 
       {/* technical paper */}
       <div className="mt-12 px-4 md:px-6 lg:px-8 text-center">
-        <h2 className="gradient-text text-4xl font-medium ">Technical Paper</h2>
+        <h2 className="text-dark font-outfit text-4xl font-bold ">Technical <span className="text-teal">Paper</span></h2>
+        <p className="text-dark my-4 text-xl tracking-tighter">Learn more about our experts’ work and contributions in technical research & published papers</p>
 
         {/* Filters Section */}
         <div className="bg-white shadow-md max-w-[1280px]  border-b border-slate-200">
@@ -188,17 +130,17 @@ function ResourcePage() {
                         <span className="font-semibold">{journal.year}</span>
                       </div>
                       <div className="text-sm text-slate-500 italic">
-                        {journal.journal}
+                        {journal.publisher}
                       </div>
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4 hover:text-blue-600 transition-colors leading-tight">
+                    <h3 className="text-2xl font-bold text-slate-900 mb-4 hover:text-blue-600 transition-colors leading-tight text-left">
                       {journal.title}
                     </h3>
 
                     {/* Authors */}
-                    <div className="flex items-start md:items-center md:justify-center gap-2 mb-4">
+                    {/* <div className="flex items-start md:items-center md:justify-center gap-2 mb-4">
                       {journal.authors.length === 1 ? (
                         <User
                           className="text-slate-400 mt-1 flex-shrink-0"
@@ -220,11 +162,11 @@ function ResourcePage() {
                           ))}
                         </p>
                       </div>
-                    </div>
+                    </div> */}
 
                     {/* Abstract */}
-                    <p className="text-slate-600 mb-4 leading-relaxed">
-                      {journal.abstract}
+                    <p className="text-slate-600 mb-4 leading-relaxed text-left">DOI:
+                      {journal.doi}
                     </p>
                   </div>
                 ))}

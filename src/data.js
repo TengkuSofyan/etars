@@ -127,4 +127,49 @@ const task = [
 
 ];
 
-export default { teamMembers, journals, task };
+const paper = [
+  {
+    id: 1,
+    title: "Applied random forest for parameter sensitivity of Low Salinity Water Injection (LSWI) implementation on carbonate reservoir",
+    publisher: "Alexandria Engineering Journal",
+    year: 2022,
+    doi: "10.1016/j.aej.2021.06.096"
+  },
+  {
+    id: 2,
+    title: "Utilizing machine learning for flow zone indicators prediction and hydraulic flow unit classification",
+    publisher: "Scientific Report",
+    year: 2023,
+    doi: "https://www.nature.com/articles/s41598-024-54893-1"
+  },
+  {
+    id: 3,
+    title: "A probabilistic appraisal of Project Greensand: Economic viability of offshore geological CO₂ storage under uncertainty",
+    publisher: "Energy Reports",
+    year: 2025,
+    doi: "110.1016/j.egyr.2026.109311 "
+  },
+  {
+    id: 4,
+    title: "Applied random forest for parameter sensitivity of Low Salinity Water Injection (LSWI) implementation on carbonate reservoir",
+    publisher: "AIP Conference Proceedings",
+    year: 2023,
+    doi: "https://doi.org/10.1063/5.0114449"
+  },
+  {
+    id: 5,
+    title: "Pore-Filling behaviors and lateral propagation of CH₄ and CO₂ hydrates forming in microfluidic porous media",
+    publisher: "Chemical Engineering Journal",
+    year: 2025,
+    doi: "10.1016/j.cej.2025.162234"
+  },
+  {
+    id: 6,
+    title: "Microfluidic study of hydrate propagation during CO₂ injection into cold aquifers",
+    publisher: "Carbon Capture Science & Technology",
+    year: 2025,
+    doi: "https://doi.org/10.1016/j.ccst.2025.100401"
+  },
+]
+
+export default { teamMembers, journals, task, paper };
