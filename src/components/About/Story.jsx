@@ -8,7 +8,7 @@ function Story() {
   return (
     <>
       <section className="relative w-full max-w-7xl">
-        <div className=" px-4 sm:px-6 lg:px-8 xl:py-18">
+        <div className=" px-4 sm:px-6 lg:px-8 xl:py-18 py-8">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             {/* Left: Blob Image */}
             <SlideInLeft className="order-2 lg:order-1">

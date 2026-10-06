@@ -10,87 +10,53 @@ import FadeIn from "../motion/FadeIn";
 function vision() {
   return (
     <>
-      <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-4 gap-3 lg:gap-4 max-w-7xl px-4 xl:px-18 md:px-6 lg:py-14 xl:py-18 bg-gray-100">
-        <SlideInLeft className=" md:col-span-1 md:row-span-2 bg-primary flex items-center justify-center flex-col rounded-2xl">
-          <ImBullhorn className="w-12 h-12 " />
-          <h2 className="font-bold text-soft text-[28px]">Our Mission </h2>
-        </SlideInLeft>
-        <SlideInLeft className="row-start-2 md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-3 bg-primary flex items-center justify-center rounded-2xl order-2 p-4">
-          <p className="text-md text-soft font-medium text-justify md:p-4">
-            To bridge the gap between academia and the energy industry by turning theoretical knowledge into practical solutions. We are dedicated to supporting students through high-quality learning resources and partnering with industry to solve real-world challenges
-          </p>
-        </SlideInLeft>
+      <div className=" py-8 lg:py-16 w-full max-w-7xl px-4 md:px-6 lg:px-8 bg-gray-100">
+        <h2 className='text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark text-center font-outfit'>Our Vision <span className='text-teal'>& Mission</span> </h2>
 
-        {/* middle section */}
+        <div className="grid grid-cols-1 grid-rows-4 gap-4 lg:grid-cols-4 lg:grid-rows-4 text-dark lg:mt-6">
+          {/* kotak 1 */}
+          <SlideInLeft className="hidden lg:block lg:row-span-2 lg:col-start-2 lg:row-start-1 rounded-2xl relative overflow-hidden">
+            <img className="bg-cover h-full w-full" src={imgVision} />
+            <div className="absolute inset-0 bg-gradient-to-tr from-teal/40 to-teal/40" />
+          </SlideInLeft>
+          {/* kotak 2 */}
+          <SlideInRight className="row-span-2 lg:col-span-2 lg:col-start-3 lg:row-start-1 rounded-2xl flex flex-col lg:flex-row items-center justify-center bg-primary p-4 md:p-6 gap-4 order-1 lg:order-2 mt-4 lg:mt-0">
+            <div className="flex items-center justify-center flex-col gap-1">
+              <ImBullhorn className="w-12 h-12 text-soft" />
+              <h2 className="font-bold text-soft text-[28px]">Mission</h2>
+            </div>
+            <div>
+              <p className="text-md text-soft font-medium text-justify tracking-wider lg:tracking-tight">
+                To bridge the gap between academia and the energy industry by turning theoretical knowledge into practical solutions. We are dedicated to supporting students through high-quality learning resources and partnering with industry to solve real-world challenges
+              </p>
+            </div>
+          </SlideInRight>
+          {/* kotak 3 */}
+          <SlideInRight className="hidden lg:block lg:row-span-2 lg:col-start-3 lg:row-start-3 rounded-2xl relative overflow-hidden">
+            <img className="bg-cover h-full w-full" src={imgMission} />
+            <div className="absolute inset-0 bg-gradient-to-tr from-dark/50 to-dark/50" />
+          </SlideInRight>
+          {/* kotak 4 */}
+          <SlideInLeft className="row-span-2 row-start-3 lg:col-span-2 lg:col-start-1 lg:row-start-3 rounded-2xl bg-dark flex flex-col lg:flex-row items-center justify-center lg:p-6 gap-4 p-4">
+            <div className="flex items-center justify-center flex-col gap-1">
+              <FaFlag className="w-12 h-12 text-soft" />
+              <h2 className="font-bold text-soft text-[28px]">Vision</h2>
+            </div>
+            <div>
+              <p className="text-md text-soft font-medium text-justify tracking-tight">
+                To be a leading, accessible hub for energy education where academic knowledge and industry practice seamlessly connect to advance the global energy sector
+              </p>
+            </div>
+          </SlideInLeft>
 
-        {/* <FadeIn className="col-span-2 row-span-2  col-start-2 row-start-1 relative overflow-hidden rounded-2xl hidden md:block md:max-h-[208px] lg:max-h-[210px]">
-          <img
-            src={imgVision2}
-            className=" w-full h-full object-cover object-[center_10%] "
-          />
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-dark/60" />
-        </FadeIn> */}
-
-
-        <SlideInLeft className="row-span-2 bg-dark rounded-2xl overflow-hidden relative">
-          <img className="bg-cover h-full w-full" src={imgVision} />
-          <div className="absolute inset-0 bg-gradient-to-tr from-teal/40 to-teal/40" />
-        </SlideInLeft>
-        <SlideInRight className="bg-cover row-span-2 bg-dark rounded-2xl overflow-hidden relative">
-          <img className="bg-cover h-full w-full" src={imgMission} />
-          <div className="absolute inset-0 bg-gradient-to-tr from-dark/50 to-dark/50" />
-        </SlideInRight>
-        {/* end middle section */}
-
-        <SlideInRight className="row-start-3 md:row-span-2 md:col-start-4 md:row-start-1 text-soft bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center flex-col rounded-2xl order-3">
-          <FaFlag className="w-12 h-12" />
-          <h2 className="font-bold text-[28px] ">Our Vision </h2>
-        </SlideInRight>
-        <SlideInRight className="row-start-4 md:col-span-2 md:row-span-2 md:col-start-3 md:row-start-3 bg-gradient-to-tr from-dark to-dark-soft flex items-center justify-center rounded-2xl order-4 p-4">
-          <p className="text-md text-soft font-medium text-justify md:p-4">
-            To be a leading, accessible hub for energy education where academic knowledge and industry practice seamlessly connect to advance the global energy sector
-          </p>
-        </SlideInRight>
-
+          {/* <FadeIn className="col-start-1 row-start-2 bg-dark rounded-bl-2xl rounded-tr-2xl"></FadeIn>
+          <FadeIn className="col-start-4 row-start-3 bg-primary rounded-tr-2xl rounded-bl-2xl"></FadeIn> */}
+          {/* <div className="col-start-4 row-start-4 bg-primary rounded-br-2xl rounded-tl-2xl"></div>
+          <div className="col-start-1 row-start-1 bg-dark rounded-tl-2xl rounded-br-2xl"></div> */}
+        </div>
       </div>
 
 
-      {/* <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1fr] lg:grid-cols-[1fr_2fr_2fr_1fr] md:grid-rows-2 gap-4 lg:gap-4 py-12 px-4 overflow-x-hidden max-w-[1024px]">
-        <SlideInLeft className="md:col-start-1 bg-primary flex flex-col items-center justify-center py-4 px-3 rounded-xl order-1 md:col-span-2 lg:col-start-2 lg:col-span-1">
-          <ImBullhorn className="w-12 h-12 " />
-          <h2 className="font-bold text-[28px]">Our Mission </h2>
-          <p className="text-md font-medium text-justify md:p-4">
-            To bridge the gap between industry and education: solving real
-            challenges for energy companies while empowering the next generation
-            of engineers, scientists, and decision-makers through practical and
-            high quality learning.
-          </p>
-        </SlideInLeft>
-
-        <SlideInRight className="md:col-start-3 relative rounded-xl overflow-hidden order-2 md:col-span-2 lg:col-span-1">
-          <img
-            src={imgVision1}
-            className="w-full h-full md:max-h-[300px] lg:max-h-none"
-          />
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" />
-        </SlideInRight>
-        <SlideInLeft className="md:col-start-1 md:row-start-2 relative rounded-xl overflow-hidden order-4 md:order-3 md:col-span-2 lg:col-span-1 lg:col-start-2">
-          <img
-            src={imgVision2}
-            className="w-full h-full md:max-h-[300px] lg:max-h-none"
-          />
-          <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" />
-        </SlideInLeft>
-        <SlideInRight className="md:col-start-3 md:row-start-2 bg-secondary text-gray-800 flex flex-col items-center justify-center px-3 py-4 rounded-xl order-3 md:order-4 md:col-span-2 lg:col-span-1 lg:col-start-3">
-          <FaFlag className="w-12 h-12" />
-          <h2 className="font-bold text-[28px]">Our Vision </h2>
-          <p className="text-md font-medium text-justify md:p-4">
-            To be recognised as a trusted partner for energy consulting and a
-            leading hub for knowledge sharing, innovation, and education in the
-            global energy landscape.
-          </p>
-        </SlideInRight>
-      </div> */}
 
     </>
 

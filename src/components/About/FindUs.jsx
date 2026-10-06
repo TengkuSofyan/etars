@@ -1,9 +1,9 @@
 import React from 'react'
-
+import FadeIn from "../motion/FadeIn";
 function FindUs() {
     return (
-        <section className="px-4 py-16 sm:px-6 sm:py-24 w-full max-w-7xl xl:px-18">
-            <div className="relative   overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 px-6 py-12 text-center shadow-xl sm:px-12 sm:py-16">
+        <section className="px-4 py-8 lg:py-16 sm:px-6 sm:py-24 w-full max-w-7xl xl:px-18">
+            <FadeIn className="relative   overflow-hidden rounded-3xl bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 px-6 py-12 text-center shadow-xl sm:px-12 sm:py-16">
                 {/* Decorative glow */}
                 <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-emerald-400/20 blur-3xl" />
                 <div className="pointer-events-none absolute -bottom-20 -left-16 h-56 w-56 rounded-full bg-amber-300/10 blur-3xl" />
@@ -40,7 +40,7 @@ function FindUs() {
                         </svg>
                     </a>
                 </div>
-            </div>
+            </FadeIn>
         </section>
     )
 }
