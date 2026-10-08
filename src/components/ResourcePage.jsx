@@ -12,6 +12,7 @@ import {
   Filter,
 } from "lucide-react";
 import data from "../data";
+import { Link } from "react-router-dom";
 
 function ResourcePage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -125,7 +126,7 @@ function ResourcePage() {
                   >
                     {/* Year Badge */}
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="flex items-center gap-2 bg-gray-700 text-white px-4 py-1 rounded-full">
+                      <div className="flex items-center gap-2 bg-primary text-white px-4 py-1 rounded-full">
                         <Calendar size={16} />
                         <span className="font-semibold">{journal.year}</span>
                       </div>
@@ -135,9 +136,12 @@ function ResourcePage() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4 hover:text-blue-600 transition-colors leading-tight text-left">
-                      {journal.title}
-                    </h3>
+                    <Link className="hover:text-primary text-slate-900" to={journal.url}>
+                      <h3 className="text-2xl font-bold  mb-4 transition-colors leading-tight text-left">
+                        {journal.title}
+                      </h3>
+
+                    </Link>
 
                     {/* Authors */}
                     {/* <div className="flex items-start md:items-center md:justify-center gap-2 mb-4">
@@ -164,10 +168,25 @@ function ResourcePage() {
                       </div>
                     </div> */}
 
-                    {/* Abstract */}
-                    <p className="text-slate-600 mb-4 leading-relaxed text-left">DOI:
-                      {journal.doi}
+                    {/* Doi */}
+                    <p className="text-slate-600 mb-4 leading-relaxed text-left font-bold"><span className="mr-2 font-extrabold">DOI:</span>
+                      <Link className="hover:text-primary" to={journal.url}>
+                        {journal.doi}
+                      </Link>
                     </p>
+
+                    {/* Authors */}
+                    <div className="flex flex-row items-center">
+                      <div className="h-[25px] w-[25px] overflow-hidden rounded-full mr-2">
+                        <img className="w-full h-full" src={journal.author_img} alt="author-image" />
+                      </div>
+                      <div>
+                        <p className="font-outfit font-medium text-dark tracking-wide">
+                          {journal.author}
+                        </p>
+                      </div>
+                    </div>
+
                   </div>
                 ))}
               </div>

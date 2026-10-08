@@ -6,7 +6,7 @@ import FadeIn from "../motion/FadeIn";
 function Expertise() {
 
     return (
-        <div className='max-w-7xl px-4 lg:py-14 xl:py-18 lg:px-8 xl:px-18 bg-gray-100 py-8'>
+        <div className='max-w-7xl px-4 lg:py-14 xl:py-18 lg:px-8 xl:px-18 py-8'>
             <h2 className='text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark text-center font-outfit'>Our <span className='text-teal'>Expertise</span> </h2>
             <p className='text-dark mt-6 tracking-wider'> Our expertise is built on the synergy between applied energy, sciences, and data analytics, delivering tangible value to both industry and academia across these key disciplines:
             </p>

@@ -8,30 +8,28 @@ const teamMembers = [
     job: "Ph.D Candidate in Petroleum Engineering Department at KFUPM",
     image:
       user2,
-    email: "sarah.j@example.com",
+    email: false,
     linkedin: "https://www.linkedin.com/in/t-mhd-sofyan/ ",
-    github: "https://github.com",
-    class: "object-cover",
+    github: false,
+
   },
   {
     name: "Muhammad Habiburrahman",
     job: "Reservoir Engineer at EMP",
     image:
       user1,
-    email: "michael.c@example.com",
+    email: false,
     linkedin: "https://www.linkedin.com/in/aufahabib/",
-    github: "https://github.com",
-    class: "row-start-2",
+    github: false,
   },
   {
     name: "Fajar Ariesta",
     job: "15+ years experience as Reservoir Engineer at Medco E&P Indonesia",
     image:
       user3,
-    email: "michael.c@example.com",
+    email: false,
     linkedin: "https://www.linkedin.com/in/fajar-ariessita-130a98321/ ",
-    github: "https://github.com",
-    class: "row-start-2",
+    github: false,
   },
 ];
 
@@ -133,42 +131,60 @@ const paper = [
     title: "Applied random forest for parameter sensitivity of Low Salinity Water Injection (LSWI) implementation on carbonate reservoir",
     publisher: "Alexandria Engineering Journal",
     year: 2022,
-    doi: "10.1016/j.aej.2021.06.096"
+    doi: "https://10.1016/j.aej.2021.06.096",
+    url: "https://www.sciencedirect.com/science/article/pii/S1110016821004579",
+    author: "Tengku Astsauri",
+    author_img: user2,
   },
   {
     id: 2,
     title: "Utilizing machine learning for flow zone indicators prediction and hydraulic flow unit classification",
     publisher: "Scientific Report",
     year: 2023,
-    doi: "https://www.nature.com/articles/s41598-024-54893-1"
+    doi: "https://www.nature.com/articles/s41598-024-54893-1",
+    url: "https://www.nature.com/articles/s41598-024-54893-1",
+    author: "Tengku Astsauri",
+    author_img: user2,
   },
   {
     id: 3,
     title: "A probabilistic appraisal of Project Greensand: Economic viability of offshore geological CO₂ storage under uncertainty",
     publisher: "Energy Reports",
     year: 2025,
-    doi: "110.1016/j.egyr.2026.109311 "
+    doi: "https://110.1016/j.egyr.2026.109311",
+    url: "https://www.sciencedirect.com/science/article/pii/S2352484726002805",
+    author: "Tengku Astsauri",
+    author_img: user2,
   },
   {
     id: 4,
-    title: "Applied random forest for parameter sensitivity of Low Salinity Water Injection (LSWI) implementation on carbonate reservoir",
+    title: "Applied fractional factorial design for CO2 immiscible huff and puff technique on Sumatra light oil reservoir",
     publisher: "AIP Conference Proceedings",
     year: 2023,
-    doi: "https://doi.org/10.1063/5.0114449"
+    doi: "https://doi.org/10.1063/5.0114449",
+    url: "https://pubs.aip.org/aip/acp/article-abstract/2431/1/060014/2906089/Applied-fractional-factorial-design-for-CO2?redirectedFrom=fulltext",
+    author: "Tengku Astsauri",
+    author_img: user2,
   },
   {
     id: 5,
     title: "Pore-Filling behaviors and lateral propagation of CH₄ and CO₂ hydrates forming in microfluidic porous media",
     publisher: "Chemical Engineering Journal",
     year: 2025,
-    doi: "10.1016/j.cej.2025.162234"
+    doi: "https://10.1016/j.cej.2025.162234",
+    url: "https://www.sciencedirect.com/science/article/abs/pii/S1385894725030608",
+    author: "M. Habiburrahman",
+    author_img: user1,
   },
   {
     id: 6,
     title: "Microfluidic study of hydrate propagation during CO₂ injection into cold aquifers",
     publisher: "Carbon Capture Science & Technology",
     year: 2025,
-    doi: "https://doi.org/10.1016/j.ccst.2025.100401"
+    doi: "https://doi.org/10.1016/j.ccst.2025.100401",
+    url: "https://www.sciencedirect.com/science/article/pii/S2772656825000417?via%3Dihub",
+    author: "M. Habiburrahman",
+    author_img: user1,
   },
 ]
 

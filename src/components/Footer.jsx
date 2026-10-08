@@ -24,9 +24,7 @@ export default function Footer() {
             </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-gray-600">
-              Company profile footer template. Replace this text with your
-              tagline, mission, or a short description of what your company
-              does.
+              Bridging Energy Knowledge & Real-World Practice
             </p>
           </div>
 
@@ -63,10 +61,10 @@ export default function Footer() {
                   className="text-gray-700 hover:text-gray-900"
                   href="mailto:hello@yourcompany.com"
                 >
-                  hello@yourcompany.com
+
                 </a>
               </p>
-              <p>Phone: +62 812-3456-7890</p>
+              <p>Phone: +62 823-8672-6174</p>
               <p>Address: Jakarta, Indonesia</p>
             </div>
 

@@ -42,10 +42,7 @@ function Story() {
                 </h2>
 
                 <p className="mt-6 max-w-prose leading-relaxed text-slate-600">
-                  As an independent consulting and education group in the energy
-                  and oil &amp; gas sector, we combine technical expertise with
-                  data science and machine learning to deliver practical and
-                  innovative solutions.
+                  E-TARS began with a shared realization between an academic researcher and an industry engineer: there is a noticeable disconnect between university theories and field realities. Driven by a desire to give back to the energy community, we created this nonprofit platform to mentor students, share practical knowledge, and foster meaningful collaborations. Our journey is fueled by one simple belief—true innovation happens only when fundamental theory seamlessly meets real-world practice
                 </p>
 
                 <div className="mt-6 flex flex-wrap gap-3">
@@ -56,7 +53,10 @@ function Story() {
                     Education
                   </span>
                   <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 ring-1 ring-slate-200">
-                    Data &amp; ML
+                    Petroleum
+                  </span>
+                  <span className="rounded-full bg-slate-100 px-3 py-1 text-sm text-slate-700 ring-1 ring-slate-200">
+                    Machine Learning
                   </span>
                 </div>
 

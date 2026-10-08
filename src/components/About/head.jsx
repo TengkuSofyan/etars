@@ -15,14 +15,14 @@ function Head() {
           We are a nonprofit organization dedicated to advancing knowledge and innovation within the energy and oil & gas sectors. We believe that massive progress happens when fundamental academic theories meet real-world industry applications. Our goal is to bridge this gap—demonstrating how core engineering concepts can be applied to solve practical field problems, and ultimately contributing to the continuous development of energy sciences.
         </p>
 
-        <button className="bg-teal border-2 border-soft rounded-full text-soft mt-4 p-4 font-medium flex items-center justify-between">
+        {/* <button className="bg-teal border-2 border-soft rounded-full text-soft mt-4 p-4 font-medium flex items-center justify-between">
           Explore Solutions
           <span className="bg-soft rounded-full text-teal h-[20px] w-[20px] flex items-center justify-center p-1 ml-2">
             <FaArrowRight />
           </span>
-        </button>
+        </button> */}
       </SlideInLeft>
-      <SlideInRight className="w-full h-full relative rounded-xl overflow-hidden md:col-span-3 md:col-start-5 mt-4 md:mt-0 order-2">
+      <SlideInRight className="w-full h-full relative overflow-hidden rounded-tl-4xl rounded-br-4xl md:col-span-3 md:col-start-5 mt-4 md:mt-0 order-2">
         <img className="w-full h-full " src={bannerImg} />
         {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" /> */}
       </SlideInRight>

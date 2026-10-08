@@ -5,7 +5,7 @@ import _ScrollTrigger from "gsap/ScrollTrigger";
 import FadeIn from "./motion/FadeIn";
 gsap.registerPlugin(_ScrollTrigger);
 
-function Card({ name, job, image, email, linkedin, github, extra_class }) {
+function Card({ name, job, image, email, linkedin, github }) {
   return (
     <FadeIn className="profile bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Card Header with Background */}
@@ -31,7 +31,7 @@ function Card({ name, job, image, email, linkedin, github, extra_class }) {
             {email && (
               <a
                 href={`mailto:${email}`}
-                className="p-2 bg-gray-100 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300"
+                className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors duration-300"
               >
                 <Mail size={20} />
               </a>
@@ -41,7 +41,7 @@ function Card({ name, job, image, email, linkedin, github, extra_class }) {
                 href={linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-100 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300"
+                className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors duration-300"
               >
                 <Linkedin size={20} />
               </a>
