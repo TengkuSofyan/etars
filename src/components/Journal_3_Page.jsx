@@ -9,10 +9,10 @@ import React from 'react'
  */
 function Journal_3_Page({
     publicationsHref = '/we-do/',
-    pdfUrl,
-    onShare,
     authorImage = '/img/userA.jpeg',
 }) {
+    const pdfUrl = true;
+    const onShare = true;
     return (
         <main className="pt-12 pb-24">
 
@@ -100,7 +100,7 @@ function Journal_3_Page({
                     </div>
                 </header>
 
-                <div className="article-content font-serif text-gray-800 text-lg leading-relaxed">
+                <div className="article-content font-serif text-gray-800 text-lg leading-relaxed text-justify">
                     <h2 className="text-teal font-bold text-2xl mt-8 mb-2">
                         INTRODUCTION
                     </h2>

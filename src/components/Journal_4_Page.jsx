@@ -10,10 +10,10 @@ import React from 'react'
  */
 function Journal_4_Page({
     publicationsHref = '/we-do/',
-    pdfUrl,
-    onShare,
     authorImage = '/img/userA.jpeg',
 }) {
+    const pdfUrl = true;
+    const onShare = true;
     return (
         <main className="pt-12 pb-24">
 

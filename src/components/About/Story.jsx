@@ -2,7 +2,7 @@ import React from "react";
 import SlideInLeft from "@/components/motion/SlideInLeft";
 import SlideInRight from "@/components/motion/SlideInRight";
 import FadeIn from "../motion/FadeIn";
-import imgStory from "/img/story.jpg"
+import imgStory from "/img/story2.jpg"
 
 function Story() {
   return (
@@ -21,7 +21,7 @@ function Story() {
                   <img
                     src={imgStory}
                     alt="Our story"
-                    className="h-[340px] w-full object-cover sm:h-[420px] lg:h-[480px]"
+                    className="h-[340px] w-full object-fill sm:h-[420px] lg:h-[480px]"
                   />
 
                   {/* Brand overlay (subtle) */}

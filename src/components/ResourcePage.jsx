@@ -176,15 +176,19 @@ function ResourcePage() {
                     </p>
 
                     {/* Authors */}
-                    <div className="flex flex-row items-center">
-                      <div className="h-[25px] w-[25px] overflow-hidden rounded-full mr-2">
-                        <img className="w-full h-full" src={journal.author_img} alt="author-image" />
-                      </div>
-                      <div>
-                        <p className="font-outfit font-medium text-dark tracking-wide">
-                          {journal.author}
-                        </p>
-                      </div>
+                    <div className="flex flex-row items-center gap-3">
+                      {journal.authors.map((author, index) => (
+                        <>
+                          <div key={index} className="h-[25px] w-[25px] overflow-hidden rounded-full">
+                            <img className="w-full h-full" src={author.img} alt="author-image" />
+                          </div>
+                          <div>
+                            <p className="font-outfit font-medium text-dark tracking-wide">
+                              {author.name}
+                            </p>
+                          </div>
+                        </>
+                      ))}
                     </div>
 
                   </div>

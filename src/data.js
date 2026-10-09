@@ -151,8 +151,10 @@ const paper = [
     year: 2022,
     doi: "https://10.1016/j.aej.2021.06.096",
     url: "https://www.sciencedirect.com/science/article/pii/S1110016821004579",
-    author: "Tengku Astsauri",
-    author_img: user2,
+    authors: [{
+      name: "Tengku Astsauri",
+      img: user2,
+    }]
   },
   {
     id: 2,
@@ -161,8 +163,15 @@ const paper = [
     year: 2023,
     doi: "https://www.nature.com/articles/s41598-024-54893-1",
     url: "https://www.nature.com/articles/s41598-024-54893-1",
-    author: "Tengku Astsauri",
-    author_img: user2,
+    authors: [{
+      name: "Tengku Astsauri",
+      img: user2,
+    },
+    {
+      name: "M. Habiburrahman",
+      img: user1
+    }
+    ]
   },
   {
     id: 3,
@@ -171,8 +180,10 @@ const paper = [
     year: 2025,
     doi: "https://110.1016/j.egyr.2026.109311",
     url: "https://www.sciencedirect.com/science/article/pii/S2352484726002805",
-    author: "Tengku Astsauri",
-    author_img: user2,
+    authors: [{
+      name: "Tengku Astsauri",
+      img: user2,
+    }]
   },
   {
     id: 4,
@@ -181,8 +192,10 @@ const paper = [
     year: 2023,
     doi: "https://doi.org/10.1063/5.0114449",
     url: "https://pubs.aip.org/aip/acp/article-abstract/2431/1/060014/2906089/Applied-fractional-factorial-design-for-CO2?redirectedFrom=fulltext",
-    author: "Tengku Astsauri",
-    author_img: user2,
+    authors: [{
+      name: "Tengku Astsauri",
+      img: user2,
+    }]
   },
   {
     id: 5,
@@ -191,8 +204,10 @@ const paper = [
     year: 2025,
     doi: "https://10.1016/j.cej.2025.162234",
     url: "https://www.sciencedirect.com/science/article/abs/pii/S1385894725030608",
-    author: "M. Habiburrahman",
-    author_img: user1,
+    authors: [{
+      name: "M. Habiburrahman",
+      img: user1,
+    }]
   },
   {
     id: 6,
@@ -201,8 +216,10 @@ const paper = [
     year: 2025,
     doi: "https://doi.org/10.1016/j.ccst.2025.100401",
     url: "https://www.sciencedirect.com/science/article/pii/S2772656825000417?via%3Dihub",
-    author: "M. Habiburrahman",
-    author_img: user1,
+    authors: [{
+      name: "M. Habiburrahman",
+      img: user1,
+    }]
   },
 ]
 
