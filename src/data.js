@@ -122,6 +122,24 @@ const task = [
     category: ["Web Development", "Corporate"],
     tags: ["Monte Carlo", "Reservoir Simulation"],
   },
+  {
+    id: 3,
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    title: "Lithofacies Classification from Well Logs Using Machine Learning Models",
+    short_description:
+      "Lithologies reflect different hydrodynamic conditions and sediment transport mechanisms, and they strongly control key petrophysical properties such as porosity and permeability.",
+    category: ["Web Development", "Corporate"],
+    tags: ["Machine Learning", "Lithofacies Classification"],
+  },
+  {
+    id: 4,
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
+    short_description:
+      "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
+    category: ["Web Development", "Corporate"],
+    tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
+  },
 
 ];
 

@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom'; // 1. Import useLocation
 
 const ScrollToTop = () => {
     const [isVisible, setIsVisible] = useState(false);
+    const { pathname } = useLocation(); // 2. Ambil properti pathname (URL) saat ini
+
+    // OTOMATIS: Scroll ke atas seketika (instan) saat pindah halaman/URL
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]); // Akan berjalan otomatis setiap kali URL berubah
 
     // Tampilkan atau sembunyikan tombol berdasarkan posisi scroll
     useEffect(() => {
@@ -20,7 +27,7 @@ const ScrollToTop = () => {
         };
     }, []);
 
-    // Fungsi untuk scroll halus ke paling atas
+    // MANUAL: Fungsi tombol untuk scroll halus ke paling atas saat diklik
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,

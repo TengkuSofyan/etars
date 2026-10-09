@@ -8,7 +8,7 @@ import React from 'react'
  * Pass pdfUrl only when a PDF is available; publicationsHref configures navigation.
  * Source wording, numerical values and cross-references are preserved verbatim.
  */
-function Blog2Page({ publicationsHref = '/publications', pdfUrl, authorImage = '/img/userA.jpeg' }) {
+function Blog2Page({ publicationsHref = '/we-do/', pdfUrl, authorImage = '/img/userA.jpeg' }) {
     return (
         <main className="pt-12 pb-24">
 

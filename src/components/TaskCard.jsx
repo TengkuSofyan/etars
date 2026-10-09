@@ -14,9 +14,9 @@ function TaskCard({ id, imageUrl, title, short_description, category, stack }) {
       </div>
       <div className="mt-4">
         <Link key={id} to={`/we-do/${id}`}>
-          <h3 className="text-2xl font-bold text-dark">{title}</h3>
+          <h3 className="text-2xl font-bold text-dark line-clamp-2">{title}</h3>
         </Link>
-        <p className="mt-2 text-black">{short_description}</p>
+        <p className="mt-2 text-black line-clamp-3">{short_description}</p>
         <div className="mt-2">
           <p className="flex items-center justify- text-gray-600 font-medium">
             <BiSolidCategory size={20} className="mr-1" />
@@ -27,9 +27,9 @@ function TaskCard({ id, imageUrl, title, short_description, category, stack }) {
               </span>
             ))} */}
           </p>
-          <div className="mt-2">
+          <div className="mt-2 flex flex-wrap gap-3">
             {stack.map((data, index) => (
-              <span key={index} className="bg-gray-400 text-slate-50 py-1 px-2 rounded-md mr-2">
+              <span key={index} className="bg-gray-400 text-slate-50 py-1 px-2 rounded-md tracking-tight">
                 {data}
               </span>
             ))}
