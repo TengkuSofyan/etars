@@ -3,6 +3,8 @@ import user2 from "/img/userA.jpeg"
 import user3 from "/img/user3.jpg"
 import cover_1 from "/img/cover-journal-1.png"
 import cover_2 from "/img/cover-journal-2.png"
+import cover_3 from "/img/cover-journal-3.png"
+import cover_4 from "/img/cover-journal-4.png"
 
 const teamMembers = [
   {
@@ -13,6 +15,7 @@ const teamMembers = [
     email: false,
     linkedin: "https://www.linkedin.com/in/t-mhd-sofyan/ ",
     github: false,
+    role: "Founder",
 
   },
   {
@@ -23,6 +26,7 @@ const teamMembers = [
     email: false,
     linkedin: "https://www.linkedin.com/in/aufahabib/",
     github: false,
+    role: "Co-Founder"
   },
   {
     name: "Fajar Ariesta",
@@ -32,6 +36,7 @@ const teamMembers = [
     email: false,
     linkedin: "https://www.linkedin.com/in/fajar-ariessita-130a98321/ ",
     github: false,
+    role: "Technical Advisor"
   },
 ];
 
@@ -126,7 +131,7 @@ const task = [
   },
   {
     id: 3,
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    imageUrl: cover_3,
     title: "Lithofacies Classification from Well Logs Using Machine Learning Models",
     short_description:
       "Lithologies reflect different hydrodynamic conditions and sediment transport mechanisms, and they strongly control key petrophysical properties such as porosity and permeability.",
@@ -135,7 +140,7 @@ const task = [
   },
   {
     id: 4,
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    imageUrl: cover_4,
     title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
     short_description:
       "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
@@ -151,7 +156,7 @@ const paper = [
     title: "Applied random forest for parameter sensitivity of Low Salinity Water Injection (LSWI) implementation on carbonate reservoir",
     publisher: "Alexandria Engineering Journal",
     year: 2022,
-    doi: "https://10.1016/j.aej.2021.06.096",
+    doi: "10.1016/j.aej.2021.06.096",
     url: "https://www.sciencedirect.com/science/article/pii/S1110016821004579",
     authors: [{
       name: "Tengku Astsauri",
@@ -163,7 +168,7 @@ const paper = [
     title: "Utilizing machine learning for flow zone indicators prediction and hydraulic flow unit classification",
     publisher: "Scientific Report",
     year: 2023,
-    doi: "https://www.nature.com/articles/s41598-024-54893-1",
+    doi: "www.nature.com/articles/s41598-024-54893-1",
     url: "https://www.nature.com/articles/s41598-024-54893-1",
     authors: [{
       name: "Tengku Astsauri",
@@ -180,7 +185,7 @@ const paper = [
     title: "A probabilistic appraisal of Project Greensand: Economic viability of offshore geological CO₂ storage under uncertainty",
     publisher: "Energy Reports",
     year: 2025,
-    doi: "https://110.1016/j.egyr.2026.109311",
+    doi: "110.1016/j.egyr.2026.109311",
     url: "https://www.sciencedirect.com/science/article/pii/S2352484726002805",
     authors: [{
       name: "Tengku Astsauri",
@@ -192,7 +197,7 @@ const paper = [
     title: "Applied fractional factorial design for CO2 immiscible huff and puff technique on Sumatra light oil reservoir",
     publisher: "AIP Conference Proceedings",
     year: 2023,
-    doi: "https://doi.org/10.1063/5.0114449",
+    doi: "doi.org/10.1063/5.0114449",
     url: "https://pubs.aip.org/aip/acp/article-abstract/2431/1/060014/2906089/Applied-fractional-factorial-design-for-CO2?redirectedFrom=fulltext",
     authors: [{
       name: "Tengku Astsauri",
@@ -204,7 +209,7 @@ const paper = [
     title: "Pore-Filling behaviors and lateral propagation of CH₄ and CO₂ hydrates forming in microfluidic porous media",
     publisher: "Chemical Engineering Journal",
     year: 2025,
-    doi: "https://10.1016/j.cej.2025.162234",
+    doi: "10.1016/j.cej.2025.162234",
     url: "https://www.sciencedirect.com/science/article/abs/pii/S1385894725030608",
     authors: [{
       name: "M. Habiburrahman",
@@ -216,7 +221,7 @@ const paper = [
     title: "Microfluidic study of hydrate propagation during CO₂ injection into cold aquifers",
     publisher: "Carbon Capture Science & Technology",
     year: 2025,
-    doi: "https://doi.org/10.1016/j.ccst.2025.100401",
+    doi: "doi.org/10.1016/j.ccst.2025.100401",
     url: "https://www.sciencedirect.com/science/article/pii/S2772656825000417?via%3Dihub",
     authors: [{
       name: "M. Habiburrahman",

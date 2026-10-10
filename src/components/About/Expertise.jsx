@@ -7,9 +7,12 @@ function Expertise() {
 
     return (
         <div className='max-w-7xl px-4 lg:py-14 xl:py-18 lg:px-8 xl:px-18 py-8'>
-            <h2 className='text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark text-center font-outfit'>Our <span className='text-teal'>Expertise</span> </h2>
-            <p className='text-dark mt-6 tracking-wider'> Our expertise is built on the synergy between applied energy, sciences, and data analytics, delivering tangible value to both industry and academia across these key disciplines:
-            </p>
+            <div className='flex flex-col items-center justify-center'>
+                <h2 className='text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark font-outfit'>Our <span className='text-teal'>Expertise</span> </h2>
+                <p className='text-dark mt-6 tracking-wider max-w-3xl text-center'> Our expertise is built on the synergy between applied energy, sciences, and data analytics, delivering tangible value to both industry and academia across these key disciplines:
+                </p>
+
+            </div>
 
             <div className="grid grid-cols-4 grid-rows-3 md:grid-cols-6 md:grid-rows-2 lg:grid-cols-7 lg:grid-rows-2 gap-4 text-dark my-8 font-outfit font-bold text-center">
                 <SlideInLeft className="col-span-2 bg-primary rounded-tl-xl rounded-br-xl p-4 text-md md:text-xl text-soft center">

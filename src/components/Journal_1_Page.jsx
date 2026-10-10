@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import figure2 from '/img/figure-2-journal-1.PNG'
 
 /**
  * Production Forecasting and Reserve Evaluation of the Nini Field Using Arps Decline Curve Analysis.
@@ -77,7 +78,6 @@ function Journal_1_Page({
                             </div>
                             <div>
                                 <p className="text-base font-semibold text-gray-900">Tengku Sofyan</p>
-                                <p className="text-sm text-gray-500">Published in 2025</p>
                             </div>
                         </div>
 
@@ -97,7 +97,12 @@ function Journal_1_Page({
                         </div>
                     </div>
 
-                    <div className="flex flex-wrap gap-2 mt-8 font-sans">
+                    <div className="mt-4">
+                        <p className="text-sm text-gray-500">Published in 2024</p>
+
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mt-4 font-sans">
                         <span className="text-sm font-semibold text-gray-500 mr-2 py-1">Tags:</span>
                         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded">Arp’s DCA</span>
                         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded">Reserve Estimation</span>
@@ -346,7 +351,6 @@ function Journal_1_Page({
                         <img src={figures.chart1} alt="Figure 1. Cumulative oil production profile of Nini Field from 2002 to 2022" loading="lazy" className="mx-auto max-w-full h-auto rounded-lg" />
                         <figcaption className="mt-3 text-center font-sans text-sm text-gray-600">
                             Figure 1. Cumulative oil production profile of Nini Field from 2002 to 2022
-                            — Recreated from the chart data embedded in the source document.
                         </figcaption>
                     </figure>
 
@@ -394,10 +398,9 @@ function Journal_1_Page({
                     </p>
 
                     <figure className="my-8">
-                        <img src={figures.chart2} alt="Figure 2. History matching and forecasting of Nini field cumulative oil production" loading="lazy" className="mx-auto max-w-full h-auto rounded-lg" />
+                        <img src={figure2} alt="Figure 2. History matching and forecasting of Nini field cumulative oil production" loading="lazy" className="mx-auto max-w-full h-auto rounded-lg" />
                         <figcaption className="mt-3 text-center font-sans text-sm text-gray-600">
                             Figure 2. History matching and forecasting of Nini field cumulative oil production
-                            — Recreated from the chart data embedded in the source document.
                         </figcaption>
                     </figure>
 
@@ -638,7 +641,6 @@ function Journal_1_Page({
                         </div>
                         <figcaption className="mt-3 text-center font-sans text-sm text-gray-600">
                             Figure 3. Distribution of b-value for Nini West and Nini East Field
-                            — Recreated from the uniform-distribution parameters shown in the source figure.
                         </figcaption>
                     </figure>
 

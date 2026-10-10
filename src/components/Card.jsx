@@ -5,7 +5,7 @@ import _ScrollTrigger from "gsap/ScrollTrigger";
 import FadeIn from "./motion/FadeIn";
 gsap.registerPlugin(_ScrollTrigger);
 
-function Card({ name, job, image, email, linkedin, github }) {
+function Card({ name, job, image, email, linkedin, github, role }) {
   return (
     <FadeIn className="profile bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
       {/* Card Header with Background */}
@@ -26,7 +26,8 @@ function Card({ name, job, image, email, linkedin, github }) {
         {/* Name and Job */}
         <div className="text-center flex flex-col justify-between h-full gap-2">
           <h3 className="text-2xl font-bold text-gray-800">{name}</h3>
-          <p className="text-gray-600 font-medium mb-2">{job}</p>
+          <p className="text-primary font-bold">{role}</p>
+          <p className="text-gray-600 font-medium">{job}</p>
           {/* Social Links */}
           <div className="flex justify-center gap-4 ">
             {email && (

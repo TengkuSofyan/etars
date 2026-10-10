@@ -11,6 +11,8 @@ function Team() {
                 <h2 className="text-[32px] md:text-[34px] lg:text-[48px] font-extrabold text-dark text-center font-outfit">
                     Meet Our <span className='text-teal'>Team</span>
                 </h2>
+                <p className='text-dark mt-6 tracking-wider max-w-3xl text-center'> We are a team of dedicated professionals who possess a strong track record in both academia and the oil and gas industry, ready to share our expertise with you.
+                </p>
                 <div className="py-6 grid-cols-1 grid-rows-2 grid md:grid-cols-3 md:grid-rows-1 gap-4 lg:gap-8">
                     {teamMembers.map((member, index) => (
                         <Card
@@ -21,7 +23,7 @@ function Team() {
                             email={member.email}
                             linkedin={member.linkedin}
                             github={member.github}
-                            extra_class={member.class}
+                            role={member.role}
                         />
                     ))}
                 </div>

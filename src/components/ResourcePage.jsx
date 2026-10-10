@@ -169,17 +169,17 @@ function ResourcePage() {
                     </div> */}
 
                     {/* Doi */}
-                    <p className="text-slate-600 mb-4 leading-relaxed text-left font-bold"><span className="mr-2 font-extrabold">DOI:</span>
+                    <div className="text-slate-600 mb-4 leading-relaxed text-left font-bold flex flex-col md:flex-row text-md"><span className="mr-2 font-extrabold">DOI:</span>
                       <Link className="hover:text-primary" to={journal.url}>
                         {journal.doi}
                       </Link>
-                    </p>
+                    </div>
 
                     {/* Authors */}
-                    <div className="flex flex-row items-center gap-3">
+                    <div className="flex flex-col md:flex-row gap-3 border-t-1 border-soft pt-2">
                       {journal.authors.map((author, index) => (
-                        <>
-                          <div key={index} className="h-[25px] w-[25px] overflow-hidden rounded-full">
+                        <div key={index} className="flex gap-2 ">
+                          <div className="h-[25px] w-[25px] overflow-hidden rounded-full">
                             <img className="w-full h-full" src={author.img} alt="author-image" loading="lazy" />
                           </div>
                           <div>
@@ -187,7 +187,7 @@ function ResourcePage() {
                               {author.name}
                             </p>
                           </div>
-                        </>
+                        </div>
                       ))}
                     </div>
 

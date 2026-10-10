@@ -106,9 +106,13 @@ function Journal_4_Page({
                             )}
                         </div>
                     </div>
-                    <p className="text-sm text-gray-500">Published in 2024</p>
 
-                    <div className="flex flex-wrap gap-2 mt-8 font-sans">
+                    <div className="mt-4">
+                        <p className="text-sm text-gray-500">Published in 2024</p>
+
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mt-4 font-sans">
                         <span className="text-sm font-semibold text-gray-500 mr-2 py-1">Tags:</span>
                         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded">Machine Learning</span>
                         <span className="px-3 py-1 bg-gray-100 text-gray-600 text-sm rounded">Flow Zone Indicator</span>
