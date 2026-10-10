@@ -18,6 +18,7 @@ function Card({ name, job, image, email, linkedin, github }) {
           <img
             src={image}
             alt={name}
+            loading="lazy"
             className={`w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover`}
           />
         </div>

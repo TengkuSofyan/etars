@@ -1,6 +1,8 @@
 import user1 from "/img/user1.jpeg"
 import user2 from "/img/userA.jpeg"
 import user3 from "/img/user3.jpg"
+import cover_1 from "/img/cover-journal-1.png"
+import cover_2 from "/img/cover-journal-2.png"
 
 const teamMembers = [
   {
@@ -106,7 +108,7 @@ const task = [
 
   {
     id: 1,
-    imageUrl: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    imageUrl: cover_1,
     title: "Production Forecasting and Reserve Evaluation of the Nini Field Using Arps Decline Curve Analysis",
     short_description:
       "In this study, Arps decline curve analysis (DCA) is used to separate and forecast the oil production of Nini West and Nini East in the Danish North Sea",
@@ -115,7 +117,7 @@ const task = [
   },
   {
     id: 2,
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    imageUrl: cover_2,
     title: "Uncertainty Quantification in Reservoir Simulation with Monte Carlo Simulation",
     short_description:
       "In this study, Monte Carlo simulation is used to quantify the uncertainty in cumulative oil production of the PUNQ-S3 reservoir model, an open-source benchmark built from a real Elf field with a gas cap and an active aquifer.",

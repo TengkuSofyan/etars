@@ -16,7 +16,7 @@ function vision() {
         <div className="grid grid-cols-1 grid-rows-4 gap-4 lg:grid-cols-4 lg:grid-rows-4 text-dark lg:mt-6">
           {/* kotak 1 */}
           <SlideInLeft className="hidden lg:block lg:row-span-2 lg:col-start-2 lg:row-start-1 rounded-2xl relative overflow-hidden">
-            <img className="bg-cover h-full w-full" src={imgVision} />
+            <img className="bg-cover h-full w-full" src={imgVision} alt="Mission-image" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-tr from-teal/40 to-teal/40" />
           </SlideInLeft>
           {/* kotak 2 */}
@@ -33,7 +33,7 @@ function vision() {
           </SlideInRight>
           {/* kotak 3 */}
           <SlideInRight className="hidden lg:block lg:row-span-2 lg:col-start-3 lg:row-start-3 rounded-2xl relative overflow-hidden">
-            <img className="bg-cover h-full w-full" src={imgMission} />
+            <img className="bg-cover h-full w-full" src={imgMission} alt="Vision-image" loading="lazy" />
             <div className="absolute inset-0 bg-gradient-to-tr from-dark/50 to-dark/50" />
           </SlideInRight>
           {/* kotak 4 */}
@@ -48,11 +48,6 @@ function vision() {
               </p>
             </div>
           </SlideInLeft>
-
-          {/* <FadeIn className="col-start-1 row-start-2 bg-dark rounded-bl-2xl rounded-tr-2xl"></FadeIn>
-          <FadeIn className="col-start-4 row-start-3 bg-primary rounded-tr-2xl rounded-bl-2xl"></FadeIn> */}
-          {/* <div className="col-start-4 row-start-4 bg-primary rounded-br-2xl rounded-tl-2xl"></div>
-          <div className="col-start-1 row-start-1 bg-dark rounded-tl-2xl rounded-br-2xl"></div> */}
         </div>
       </div>
 

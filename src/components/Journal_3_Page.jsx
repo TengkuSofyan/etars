@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 /**
  * Lithofacies Classification from Well Logs Using Machine Learning Models.
@@ -708,6 +709,22 @@ function Journal_3_Page({
 
                     </div>
                 </div>
+
+                <footer className="mt-16 pt-8 border-t border-gray-200">
+
+                    {/* <!-- Next/Prev Article Navigation --> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
+                        <Link to="/we-do/2" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors">
+                            <span className="block text-sm text-gray-500 mb-1">&larr; Previous Article</span>
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Uncertainty Quantification in Reservoir Simulation With Monte Carlo Simulation</span>
+                        </Link>
+                        <Link to="/we-do/4" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors text-right">
+                            <span className="block text-sm text-gray-500 mb-1">Next Article &rarr;</span>
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning</span>
+                        </Link>
+                    </div>
+                </footer>
+
             </article>
         </main>
     )

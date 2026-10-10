@@ -10,7 +10,7 @@ function FindUs() {
 
                 <div className="relative">
                     <h2 className="text-3xl font-bold tracking-wide font-outfit text-white sm:text-4xl">
-                        Partner With Us
+                        Share Your Challenge
                     </h2>
 
                     <div className="mx-auto mt-4 h-1 w-16 rounded-full bg-teal" />

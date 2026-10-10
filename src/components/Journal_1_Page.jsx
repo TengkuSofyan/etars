@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 /**
  * Production Forecasting and Reserve Evaluation of the Nini Field Using Arps Decline Curve Analysis.
@@ -699,6 +700,19 @@ function Journal_1_Page({
 
                     </div>
                 </div>
+
+                {/* <!-- Tags and Bottom Navigation --> */}
+                <footer className="mt-16 pt-8 border-t border-gray-200">
+
+                    {/* <!-- Next/Prev Article Navigation --> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
+
+                        <Link to="/we-do/2" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors text-right">
+                            <span className="block text-sm text-gray-500 mb-1">Next Article &rarr;</span>
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Uncertainty Quantification in Reservoir Simulation With Monte Carlo Simulation</span>
+                        </Link>
+                    </div>
+                </footer>
             </article>
         </main>
     )

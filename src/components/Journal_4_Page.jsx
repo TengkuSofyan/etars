@@ -1,4 +1,7 @@
 import React from 'react'
+import authorImage1 from '/img/userA.jpeg'
+import authorImage2 from '/img/user1.jpeg'
+import { Link } from 'react-router-dom';
 
 /**
  * Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning.
@@ -68,14 +71,24 @@ function Journal_4_Page({
 
                     {/* Author Info */}
                     <div className="flex items-center justify-between flex-wrap gap-4">
-                        <div className="flex items-center">
-                            <div className="h-12 w-12 rounded-full bg-etars-teal flex items-center justify-center overflow-hidden mr-4 shadow-sm">
-                                <img className="w-full h-full object-cover" src={authorImage} alt="Tengku Sofyan" />
+                        <div className="flex items-center gap-4">
+                            <div className="flex items-center gap-3">
+                                <div className="h-12 w-12 rounded-full bg-etars-teal flex items-center justify-center overflow-hidden  shadow-sm">
+                                    <img className="w-full h-full object-cover" src={authorImage1} alt="Tengku Sofyan" />
+                                </div>
+                                <div>
+                                    <p className="text-base font-semibold text-gray-900">Tengku Sofyan</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-base font-semibold text-gray-900">Tengku Sofyan &amp; Muhammad Aufa Habiburrahman</p>
-                                <p className="text-sm text-gray-500">Published in 2024</p>
+                            <div className="flex items-center gap-3">
+                                <div className="h-12 w-12 rounded-full bg-etars-teal flex items-center justify-center overflow-hidden  shadow-sm">
+                                    <img className="w-full h-full object-cover" src={authorImage2} alt="Tengku Sofyan" />
+                                </div>
+                                <div>
+                                    <p className="text-base font-semibold text-gray-900">Muhammad Habiburrahman</p>
+                                </div>
                             </div>
+
                         </div>
 
                         {/* Action Buttons */}
@@ -93,6 +106,7 @@ function Journal_4_Page({
                             )}
                         </div>
                     </div>
+                    <p className="text-sm text-gray-500">Published in 2024</p>
 
                     <div className="flex flex-wrap gap-2 mt-8 font-sans">
                         <span className="text-sm font-semibold text-gray-500 mr-2 py-1">Tags:</span>
@@ -1439,6 +1453,18 @@ function Journal_4_Page({
                     </p>
 
                 </div>
+
+                <footer className="mt-16 pt-8 border-t border-gray-200">
+
+                    {/* <!-- Next/Prev Article Navigation --> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
+                        <Link to="/we-do/3" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors">
+                            <span className="block text-sm text-gray-500 mb-1">&larr; Previous Article</span>
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Lithofacies Classification From Well Logs using Machine Learning Models</span>
+                        </Link>
+
+                    </div>
+                </footer>
             </article>
         </main>
     )

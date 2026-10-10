@@ -5,7 +5,7 @@ import Head from "./About/head";
 import Story from "./About/Story";
 import Vision from "./About/vision";
 import Team from "./About/team";
-import Expertise from "./Expertise/Expertise";
+import Expertise from "./About/Expertise";
 import FindUs from "./About/FindUs"
 
 function AboutPage() {

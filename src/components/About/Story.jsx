@@ -14,10 +14,10 @@ function Story() {
             <SlideInLeft className="order-2 lg:order-1">
               <div className="relative">
                 {/* Glow */}
-                <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-[#0F766E]/25 via-[#1B9C8F]/15 to-[#2EC4B6]/20 blur-2xl" />
+                {/* <div className="pointer-events-none absolute -inset-6 rounded-[36px] bg-gradient-to-tr from-[#0F766E]/25 via-[#1B9C8F]/15 to-[#2EC4B6]/20 blur-2xl" /> */}
 
                 {/* Blob */}
-                <div className="relative overflow-hidden shadow-lg ring-1 ring-black/5 rounded-tl-4xl rounded-br-4xl">
+                <div className="relative overflow-hidden shadow-lg ring-1 ring-black/5 rounded-tl-4xl rounded-br-4xl ">
                   <img
                     src={imgStory}
                     alt="Our story"
@@ -25,7 +25,8 @@ function Story() {
                   />
 
                   {/* Brand overlay (subtle) */}
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#0F766E]/20 via-transparent to-[#2EC4B6]/15" />
+                  {/* <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#0F766E]/20 via-transparent to-[#2EC4B6]/15" /> */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-teal/40 to-dark/60" />
                 </div>
               </div>
             </SlideInLeft>

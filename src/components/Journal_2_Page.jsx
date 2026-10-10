@@ -1,4 +1,6 @@
+import { Link2 } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 /**
  * Full DOCX content, styled to match BlogPage.jsx.
@@ -795,19 +797,18 @@ function Journal_2_Page({ publicationsHref = '/we-do/', pdfUrl, authorImage = '/
                     </div>
                 </div>
 
-                {/* <!-- Tags and Bottom Navigation --> */}
                 <footer className="mt-16 pt-8 border-t border-gray-200">
 
                     {/* <!-- Next/Prev Article Navigation --> */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
-                        <a href="#" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors">
+                        <Link to="/we-do/1" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors">
                             <span className="block text-sm text-gray-500 mb-1">&larr; Previous Article</span>
-                            <span className="block font-semibold text-etars-dark group-hover:text-etars-teal transition-colors line-clamp-2">Optimization Techniques in Modern Reservoir Simulation</span>
-                        </a>
-                        <a href="#" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors text-right">
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Production Forecasting and Reserve Evalutaion of The Nini Field Using Arps Decline Curve Analysis</span>
+                        </Link>
+                        <Link to="/we-do/3" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors text-right">
                             <span className="block text-sm text-gray-500 mb-1">Next Article &rarr;</span>
-                            <span className="block font-semibold text-etars-dark group-hover:text-etars-teal transition-colors line-clamp-2">Economic Impact of Enhanced Oil Recovery Methods</span>
-                        </a>
+                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Lithofacies Classification From Well Logs using Machine Learning Models</span>
+                        </Link>
                     </div>
                 </footer>
             </article>

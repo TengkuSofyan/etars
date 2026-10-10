@@ -23,7 +23,7 @@ function Head() {
         </button> */}
       </SlideInLeft>
       <SlideInRight className="w-full h-full relative overflow-hidden rounded-tl-4xl rounded-br-4xl md:col-span-3 md:col-start-5 mt-4 md:mt-0 order-2">
-        <img className="w-full h-full " src={bannerImg} />
+        <img className="w-full h-full " src={bannerImg} alt="banner-image" loading="lazy" />
         {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/50 to-secondary/50" /> */}
       </SlideInRight>
     </div>
