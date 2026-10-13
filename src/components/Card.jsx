@@ -26,7 +26,7 @@ function Card({ name, job, image, email, linkedin, github, role }) {
         {/* Name and Job */}
         <div className="text-center flex flex-col justify-between h-full gap-2">
           <h3 className="text-2xl font-bold text-gray-800">{name}</h3>
-          <p className="text-primary font-bold">{role}</p>
+
           <p className="text-gray-600 font-medium">{job}</p>
           {/* Social Links */}
           <div className="flex justify-center gap-4 ">

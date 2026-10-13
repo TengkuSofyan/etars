@@ -42,7 +42,7 @@ function Story() {
                   Our <span className="text-teal">Story</span>
                 </h2>
 
-                <p className="mt-6 max-w-prose leading-relaxed text-slate-600">
+                <p className="mt-6 max-w-prose leading-relaxed text-slate-600 text-justify">
                   E-TARS began with a shared realization between an academic researcher and an industry engineer: there is a noticeable disconnect between university theories and field realities. Driven by a desire to give back to the energy community, we created this nonprofit platform to mentor students, share practical knowledge, and foster meaningful collaborations. Our journey is fueled by one simple belief—true innovation happens only when fundamental theory seamlessly meets real-world practice
                 </p>
 
