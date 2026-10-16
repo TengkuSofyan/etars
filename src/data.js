@@ -20,7 +20,7 @@ const teamMembers = [
   },
   {
     name: "Muhammad Habiburrahman",
-    job: "Reservoir Engineer at EMP",
+    job: "Reservoir Engineer at EMP Gebang",
     image:
       user1,
     email: false,
@@ -29,7 +29,7 @@ const teamMembers = [
     role: "Co-Founder"
   },
   {
-    name: "Fajar Ariesta",
+    name: "Fajar Ariessita",
     job: "15+ years experience as Reservoir Engineer at Medco E&P Indonesia",
     image:
       user3,

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import figure2 from '/img/figure-2-journal-1.PNG'
+import figure1 from '/img/journal-1-figure-1.PNG'
+import figure3A from '/img/figure-3-image-1-journal-1.png'
+import figure3B from '/img/figure-3-image-2-journal-1.png'
 
 /**
  * Production Forecasting and Reserve Evaluation of the Nini Field Using Arps Decline Curve Analysis.
@@ -348,7 +351,7 @@ function Journal_1_Page({
                     </p>
 
                     <figure className="my-8">
-                        <img src={figures.chart1} alt="Figure 1. Cumulative oil production profile of Nini Field from 2002 to 2022" loading="lazy" className="mx-auto max-w-full h-auto rounded-lg" />
+                        <img src={figure1} alt="Figure 1. Cumulative oil production profile of Nini Field from 2002 to 2022" loading="lazy" className="mx-auto max-w-full h-auto rounded-lg" />
                         <figcaption className="mt-3 text-center font-sans text-sm text-gray-600">
                             Figure 1. Cumulative oil production profile of Nini Field from 2002 to 2022
                         </figcaption>
@@ -625,14 +628,14 @@ function Journal_1_Page({
                     <figure className="my-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
                             <img
-                                src={figures.image1}
+                                src={figure3A}
                                 alt="Figure 3. Distribution of b-value for Nini West and Nini East Field — left panel"
                                 loading="lazy"
                                 decoding="async"
                                 className="mx-auto max-w-full h-auto rounded-lg"
                             />
                             <img
-                                src={figures.image2}
+                                src={figure3B}
                                 alt="Figure 3. Distribution of b-value for Nini West and Nini East Field — right panel"
                                 loading="lazy"
                                 decoding="async"

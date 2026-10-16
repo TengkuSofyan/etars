@@ -18,7 +18,7 @@ function Expertise() {
                 <SlideInLeft className="col-span-2 bg-primary rounded-tl-xl rounded-br-xl p-4 text-md md:text-xl text-soft center">
                     <p>Reservoir Engineering</p>
                 </SlideInLeft>
-                <SlideInLeft className="col-span-2 col-start-3 bg-primary rounded-tl-xl rounded-br-xl p-4 text-soft center">
+                <SlideInLeft className="col-span-2 col-start-3 bg-primary rounded-tl-xl rounded-br-xl p-4 text-md md:text-xl text-soft center">
                     <p>Well Testing</p>
                 </SlideInLeft>
                 <SlideInLeft className="col-span-2 row-start-2 md:col-start-5 md:row-start-1 bg-primary rounded-tl-xl rounded-br-xl p-4 text-soft text-md md:text-xl center">
