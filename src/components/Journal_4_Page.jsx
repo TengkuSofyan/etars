@@ -1464,7 +1464,11 @@ function Journal_4_Page({
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-sans">
                         <Link to="/we-do/3" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors">
                             <span className="block text-sm text-gray-500 mb-1">&larr; Previous Article</span>
-                            <span className="block font-semibold text-dark group-hover:text-etars-teal transition-colors line-clamp-2">Lithofacies Classification From Well Logs using Machine Learning Models</span>
+                            <span className="block font-semibold text-dark transition-colors line-clamp-2">Lithofacies Classification From Well Logs using Machine Learning Models</span>
+                        </Link>
+                        <Link to="/we-do/5" className="group block p-6 border border-gray-200 rounded-lg hover:border-etars-teal transition-colors text-right">
+                            <span className="block text-sm text-gray-500 mb-1">Next Article &rarr;</span>
+                            <span className="block font-semibold text-dark transition-colors line-clamp-1">Application of a language Model-Based Forecasting Framework (Chronos) for Probabilistic Oil Production FOrecasting: A Comparison with DCA, ARIMA, AND LSTM</span>
                         </Link>
 
                     </div>

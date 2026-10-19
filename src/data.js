@@ -5,6 +5,10 @@ import cover_1 from "/img/cover-journal-1.png"
 import cover_2 from "/img/cover-journal-2.png"
 import cover_3 from "/img/cover-journal-3.png"
 import cover_4 from "/img/cover-journal-4.png"
+import cover_5 from "/img/cover-journal-5.png"
+import cover_6 from "/img/cover-journal-6.png"
+import cover_7 from "/img/cover-journal-7.png"
+import cover_8 from "/img/cover-journal-8.png"
 
 const teamMembers = [
   {
@@ -146,6 +150,42 @@ const task = [
       "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
     category: ["Web Development", "Corporate"],
     tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
+  },
+  {
+    id: 5,
+    imageUrl: cover_5,
+    title: "Application of a language Model-Based Forecasting Framework (Chronos) for Probabilistic Oil Production FOrecasting: A Comparison with DCA, ARIMA, AND LSTM",
+    short_description:
+      "This study pioneers the use of Chronos, an LLM-based framework, for daily oil production forecasting using Volve field data. Benchmarked against Arps’ DCA, ARIMA, and LSTM, zero-shot Chronos uniquely captures natural decline trends that traditional models often miss, despite higher initial errors.",
+    category: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
+    tags: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
+  },
+  {
+    id: 6,
+    imageUrl: cover_6,
+    title: "Modelling Fluid Flow Using CRMP and Comparing it with an AI-Based Model",
+    short_description:
+      "This study compares two reservoir forecasting approaches across four wells: the physics-based Capacitance Resistance Model (CRMIP) and the data-driven Random Forest (RF) algorithm. ",
+    category: ["Capacitance Resistance Model", "Machine Learning", "Production Forecasting"],
+    tags: ["Capacitance Resistance Model", "Machine Learning", "Production Forecasting"],
+  },
+  {
+    id: 7,
+    imageUrl: cover_7,
+    title: "Layered Reservoir With No Crossflow, Constant-Rate IBC, and Constant-Rate OBC",
+    short_description:
+      "This study derives an analytical pressure-transient model for a two-layer reservoir with no crossflow, produced by a fully penetrating vertical well under constant-rate inner and outer boundary conditions, including wellbore storage and skin effects. ",
+    category: ["Capacitance Resistance Model", "Machine Learning", "Production Forecasting"],
+    tags: ["Pressure Transient Analysist", "Layered Reservoir", "Laplace Transform"],
+  },
+  {
+    id: 8,
+    imageUrl: cover_8,
+    title: "Probabilistic Assessment of Offshore CO₂ Storage Performance in The Nini West Field (Project Greensand)",
+    short_description:
+      "This study evaluates the CO₂ storage performance of the depleted Nini West field, the initial storage site of Project Greensand in the Danish North Sea.",
+    category: ["Capacitance Resistance Model", "Machine Learning", "Production Forecasting"],
+    tags: ["CO₂ Storage", "Monte Carlo Simulation", "Gaussian Pressure Transient Analysis"],
   },
 
 ];
