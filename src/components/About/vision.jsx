@@ -44,7 +44,7 @@ function vision() {
             </div>
             <div>
               <p className="text-md text-soft font-medium text-justify tracking-tight">
-                To be a leading, accessible hub for energy education where academic knowledge and industry practice seamlessly connect to advance the global energy sector
+                To serve as an accessible hub for energy education, seamlessly connecting academic knowledge and indsuty practice to create a positive impact within the energy community
               </p>
             </div>
           </SlideInLeft>

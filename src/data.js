@@ -142,24 +142,24 @@ const task = [
     category: ["Web Development", "Corporate"],
     tags: ["Machine Learning", "Lithofacies Classification"],
   },
-  {
-    id: 4,
-    imageUrl: cover_4,
-    title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
-    short_description:
-      "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
-    category: ["Web Development", "Corporate"],
-    tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
-  },
-  {
-    id: 5,
-    imageUrl: cover_5,
-    title: "Application of a language Model-Based Forecasting Framework (Chronos) for Probabilistic Oil Production FOrecasting: A Comparison with DCA, ARIMA, AND LSTM",
-    short_description:
-      "This study pioneers the use of Chronos, an LLM-based framework, for daily oil production forecasting using Volve field data. Benchmarked against Arps’ DCA, ARIMA, and LSTM, zero-shot Chronos uniquely captures natural decline trends that traditional models often miss, despite higher initial errors.",
-    category: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
-    tags: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
-  },
+  // {
+  //   id: 4,
+  //   imageUrl: cover_4,
+  //   title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
+  //   short_description:
+  //     "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
+  //   category: ["Web Development", "Corporate"],
+  //   tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
+  // },
+  // {
+  //   id: 5,
+  //   imageUrl: cover_5,
+  //   title: "Application of a language Model-Based Forecasting Framework (Chronos) for Probabilistic Oil Production FOrecasting: A Comparison with DCA, ARIMA, AND LSTM",
+  //   short_description:
+  //     "This study pioneers the use of Chronos, an LLM-based framework, for daily oil production forecasting using Volve field data. Benchmarked against Arps’ DCA, ARIMA, and LSTM, zero-shot Chronos uniquely captures natural decline trends that traditional models often miss, despite higher initial errors.",
+  //   category: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
+  //   tags: ["Arp’s DCA", "Reserve Estimation", "Probabilistic Analysis"],
+  // },
   {
     id: 6,
     imageUrl: cover_6,
