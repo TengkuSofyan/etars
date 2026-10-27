@@ -142,15 +142,15 @@ const task = [
     category: ["Web Development", "Corporate"],
     tags: ["Machine Learning", "Lithofacies Classification"],
   },
-  // {
-  //   id: 4,
-  //   imageUrl: cover_4,
-  //   title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
-  //   short_description:
-  //     "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
-  //   category: ["Web Development", "Corporate"],
-  //   tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
-  // },
+  {
+    id: 4,
+    imageUrl: cover_4,
+    title: "Flow Zone Indicator Prediction and Hydraulic Flow Unit Classification Using Machine Learning",
+    short_description:
+      "Hydraulic flow unit (HFU) zonation groups rocks with similar pore-throat geometry and, therefore, similar flow behavior.",
+    category: ["Web Development", "Corporate"],
+    tags: ["Machine Learning", "Flow Zone Indicator", "Hydraulic Flow Unit"],
+  },
   // {
   //   id: 5,
   //   imageUrl: cover_5,
