@@ -20,6 +20,7 @@ export function PlaylistCard({ title, thumbnail, videoCount, href = "#", courseN
       href={href}
       className="group block w-full sm:max-w-[calc(50%-10px)] sm:flex-[1_1_calc(50%-10px)] max-w-xs rounded-xl outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2"
       target="_blank"
+      rel="noopener noreferrer"
     >
       {/* Thumbnail + efek tumpukan */}
       <div className="relative pt-3">

@@ -65,7 +65,7 @@ function ResourcePage() {
             videoCount={3}
             thumbnail={thumbnail1}
             courseNum={"01"}
-            href="https://www.youtube.com/watch?v=LeJss5CcneE&list=PLBbH9ddw69u4t"
+            href="https://www.youtube.com/watch?v=LeJss5CcneE&amp;list=PLBbH9ddw69u4"
           />
 
 
