@@ -24,7 +24,7 @@ function FindUs() {
                     </p>
 
                     <a
-                        href="mailto:hello@yourdomain.com"
+                        href="mailto:tengkusofyan41@gmail.com"
                         className="mt-8 inline-flex items-center gap-2 rounded-full bg-teal px-7 py-3 text-sm font-semibold text-soft shadow-lg transition hover:-translate-y-0.5 hover:bg-emerald-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900 sm:text-base"
                     >
                         Email Us

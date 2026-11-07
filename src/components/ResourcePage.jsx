@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import thumbnail1 from "/img/thumbnail/well-testing.png"
 
 import { FaUserAlt } from "react-icons/fa";
 import { IoIosTime } from "react-icons/io";
@@ -13,6 +14,7 @@ import {
 } from "lucide-react";
 import data from "../data";
 import { Link } from "react-router-dom";
+import { PlaylistCard } from "./ResourcePageComponent/PlaylistCard";
 
 function ResourcePage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -51,6 +53,26 @@ function ResourcePage() {
   return (
     <div className="px-4 md:px-6 lg:px-8 text-primary max-w-[1280px] mx-auto">
       <h1 className="text-5xl font-extrabold Font-outfit mt-12">Resource</h1>
+
+      {/* Video Section */}
+      <div className="mt-12 px-4 md:px-6 lg:px-8 text-center">
+        <h2 className="text-dark font-outfit text-4xl font-bold ">Short Course <span className="text-teal">Playlist</span></h2>
+        {/* <p className="text-dark my-4 text-xl tracking-tighter">Learn more about our experts’ work and contributions in technical research & published papers</p> */}
+
+        <section className="pt-8 flex flex-col lg:flex-row gap-3 flex-wrap items-center justify-start lg:gap-4">
+          <PlaylistCard
+            title="Well Testing"
+            videoCount={3}
+            thumbnail={thumbnail1}
+            courseNum={"01"}
+            href="https://www.youtube.com/watch?v=LeJss5CcneE&list=PLBbH9ddw69u4t"
+          />
+
+
+        </section>
+
+
+      </div>
 
 
       {/* technical paper */}
@@ -122,7 +144,7 @@ function ResourcePage() {
                 {filteredJournals.map((journal) => (
                   <div
                     key={journal.id}
-                    className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 lg:p-8 border border-slate-200 hover:border-blue-300"
+                    className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 lg:p-8 border border-slate-200 hover:border-primary"
                   >
                     {/* Year Badge */}
                     <div className="flex items-center gap-3 mb-4">
