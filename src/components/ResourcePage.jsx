@@ -62,10 +62,10 @@ function ResourcePage() {
         <section className="pt-8 flex flex-col lg:flex-row gap-3 flex-wrap items-center justify-start lg:gap-4">
           <PlaylistCard
             title="Well Testing"
-            videoCount={3}
+            videoCount={6}
             thumbnail={thumbnail1}
             courseNum={"01"}
-            href="https://www.youtube.com/watch?v=LeJss5CcneE&amp;list=PLBbH9ddw69u4"
+            href="https://www.youtube.com/playlist?list=PLBbH9ddw69u4"
           />
 
 

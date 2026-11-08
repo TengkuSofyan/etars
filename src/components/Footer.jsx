@@ -56,10 +56,10 @@ export default function Footer() {
 
             <div className="mt-4 space-y-3 text-sm text-gray-600">
               <p>
-                Email:{" "}
+                Email: tengkusofyan14@gmail.com
                 <a
                   className="text-gray-700 hover:text-gray-900"
-                  href="mailto:hello@yourcompany.com"
+                  href="mailto:tengkusofyan14@gmail.com"
                 >
 
                 </a>
@@ -71,14 +71,7 @@ export default function Footer() {
             {/* Social */}
             <div className="mt-6 flex gap-3">
               <a
-                href="#"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 ring-1 ring-gray-200 transition hover:bg-gray-200"
-                aria-label="Twitter"
-              >
-                <span className="text-sm text-gray-700">X</span>
-              </a>
-              <a
-                href="#"
+                href="https://linkedin.com/company/tars-energy"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gray-100 ring-1 ring-gray-200 transition hover:bg-gray-200"
                 aria-label="LinkedIn"
               >
